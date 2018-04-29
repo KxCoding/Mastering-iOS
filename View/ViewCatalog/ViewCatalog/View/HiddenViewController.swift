@@ -22,15 +22,20 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
+class HiddenViewController: UIViewController {
+   
    @IBOutlet weak var redView: UIView!
+   
+   @IBOutlet weak var hiddenSwitch: UISwitch!
+   
+   @IBAction func toggleHidden(_ sender: UISwitch) {
+      
+   }
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
+      
    }
 }

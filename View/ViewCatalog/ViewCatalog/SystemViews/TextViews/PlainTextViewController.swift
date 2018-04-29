@@ -22,15 +22,51 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
-   @IBOutlet weak var redView: UIView!
+class PlainTextViewController: UIViewController {
+   
+   
+   
+   @IBOutlet weak var fontSizeStepper: UIStepper!
+   
+   
+   
+   @IBAction func changeColorToRed(_ sender: Any) {
+      
+   }
+   
+   @IBAction func changeColorToBlue(_ sender: Any) {
+      
+   }
+   
+   @IBAction func changeColorToBlack(_ sender: Any) {
+      
+   }
+   
+   
+   
+   
+   @IBAction func updateAlignment(_ sender: UISegmentedControl) {
+      let selectedIndex = sender.selectedSegmentIndex
+      
+      
+   }
+   
+   
+   
+   
+   @IBAction func updateFontSize(_ sender: UIStepper) {
+      let newSize = CGFloat(sender.value)
+      
+      
+   }
+   
+   
+   
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
+      //fontSizeStepper.value = Double(valueLabel.font.pointSize)
    }
 }

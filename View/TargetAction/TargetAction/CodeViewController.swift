@@ -22,15 +22,15 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
-   @IBOutlet weak var redView: UIView!
+class CodeViewController: UIViewController {
+   
+   @IBOutlet weak var btn: UIButton!
+   
+   @IBOutlet weak var slider: UISlider!
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
    }
 }

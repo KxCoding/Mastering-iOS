@@ -22,15 +22,20 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
+class ClippingViewController: UIViewController {
+   
    @IBOutlet weak var redView: UIView!
+   
+   @IBOutlet weak var clippingSwitch: UISwitch!
+   
+   @IBAction func toggleClipToBounds(_ sender: UISwitch) {
+      redView.clipsToBounds = sender.isOn
+   }
    
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
+      clippingSwitch.isOn = redView.clipsToBounds
    }
 }

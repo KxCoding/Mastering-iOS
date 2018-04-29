@@ -22,15 +22,21 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
-   @IBOutlet weak var redView: UIView!
+class SwitchViewController: UIViewController {
    
+   @IBOutlet weak var bulbImageView: UIImageView!
+   
+   @IBOutlet weak var testSwitch: UISwitch!
+   
+   
+   
+   @IBAction func toggle(_ sender: Any) {
+      
+   }
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
+      
    }
 }

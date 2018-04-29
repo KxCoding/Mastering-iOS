@@ -22,15 +22,9 @@
 
 import UIKit
 
-class IdentifierViewController: UIViewController {
-
-   @IBOutlet weak var redView: UIView!
+class TagViewController: UIViewController {
    
-   
-   override func viewDidLoad() {
-      super.viewDidLoad()
+   @IBAction func changeColor(_ sender: Any) {
       
-      let leading = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-      leading.isActive = true
    }
 }
