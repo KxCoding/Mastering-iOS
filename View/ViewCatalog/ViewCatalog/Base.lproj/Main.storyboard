@@ -121,6 +121,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4yg-Xv-6qp" kind="show" id="qfe-Tf-Jf2"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="MPl-z1-1Xm" detailTextLabel="KkB-fA-hFx" style="IBUITableViewCellStyleSubtitle" id="nUL-ht-56R">
                                         <rect key="frame" x="0.0" y="307" width="375" height="44"/>
@@ -145,6 +148,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="60R-HI-VEW" kind="show" id="5b0-zp-LpT"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="uLK-VU-BpG" detailTextLabel="UT1-b3-Svq" style="IBUITableViewCellStyleSubtitle" id="H4b-dG-c61">
                                         <rect key="frame" x="0.0" y="351" width="375" height="44"/>
@@ -278,6 +284,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1FC-3d-yi9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2214" y="165"/>
+        </scene>
+        <!--ContentViews-->
+        <scene sceneID="MH4-Jc-T9y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContentViews" id="4yg-Xv-6qp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PxF-6c-7lB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2210" y="361"/>
+        </scene>
+        <!--ContainerViews-->
+        <scene sceneID="EjS-FB-KTi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContainerViews" id="60R-HI-VEW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfS-Nq-uCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="674"/>
         </scene>
     </scenes>
 </document>

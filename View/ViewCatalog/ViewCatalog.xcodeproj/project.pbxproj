@@ -11,6 +11,17 @@
 		AA08D2C72081DD7A0027424F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA08D2C52081DD7A0027424F /* Main.storyboard */; };
 		AA08D2C92081DD7B0027424F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA08D2C82081DD7B0027424F /* Assets.xcassets */; };
 		AA08D2CC2081DD7B0027424F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA08D2CA2081DD7B0027424F /* LaunchScreen.storyboard */; };
+		AA1F677720997CE600C344BD /* ImageAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F677620997CE600C344BD /* ImageAnimationViewController.swift */; };
+		AA1F677A209995D500C344BD /* TextPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F6779209995D500C344BD /* TextPickerViewController.swift */; };
+		AA1F677C2099960400C344BD /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F677B2099960400C344BD /* ImagePickerViewController.swift */; };
+		AA33D56C20A06CF000C8E67E /* ProgressViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D56B20A06CF000C8E67E /* ProgressViewViewController.swift */; };
+		AA33D56F20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D56E20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift */; };
+		AA33D57220A0897A00C8E67E /* ContainerViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA33D57120A0897A00C8E67E /* ContainerViews.storyboard */; };
+		AA33D57520A0A09D00C8E67E /* StackViewAxisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57420A0A09D00C8E67E /* StackViewAxisViewController.swift */; };
+		AA33D57720A0D13200C8E67E /* StackViewAlignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57620A0D13200C8E67E /* StackViewAlignmentViewController.swift */; };
+		AA33D57920A0D15300C8E67E /* StackViewDistributionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57820A0D15300C8E67E /* StackViewDistributionViewController.swift */; };
+		AA33D57B20A0D16C00C8E67E /* StackViewSpacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57A20A0D16C00C8E67E /* StackViewSpacingViewController.swift */; };
+		AA33D57D20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57C20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift */; };
 		AA40384520832D040075AE42 /* TextViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA40384320832D040075AE42 /* TextViews.storyboard */; };
 		AA403848208378F20075AE42 /* PlainTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA403847208378F20075AE42 /* PlainTextViewController.swift */; };
 		AA40384A2083B6370075AE42 /* MultilineLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4038492083B6370075AE42 /* MultilineLabelViewController.swift */; };
@@ -29,6 +40,11 @@
 		AA83C06A2086270000F28630 /* ButtonStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83C0692086270000F28630 /* ButtonStateViewController.swift */; };
 		AA83C06C20863CD600F28630 /* TextButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83C06B20863CD600F28630 /* TextButtonViewController.swift */; };
 		AA83C06E2086514C00F28630 /* ImageButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83C06D2086514C00F28630 /* ImageButtonViewController.swift */; };
+		AAEA0C1E2097F75B002FF765 /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA0C1D2097F75B002FF765 /* SegmentedControlViewController.swift */; };
+		AAEA0C2020980702002FF765 /* CustomizingSegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA0C1F20980702002FF765 /* CustomizingSegmentedControlViewController.swift */; };
+		AAEA0C2320986343002FF765 /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA0C2220986343002FF765 /* StepperViewController.swift */; };
+		AAEB8E1E209882D500D2355D /* ContentViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEB8E1D209882D500D2355D /* ContentViews.storyboard */; };
+		AAF76C862096D8D3008435E4 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF76C852096D8D3008435E4 /* PageControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +54,17 @@
 		AA08D2C82081DD7B0027424F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA08D2CB2081DD7B0027424F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA08D2CD2081DD7B0027424F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1F677620997CE600C344BD /* ImageAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnimationViewController.swift; sourceTree = "<group>"; };
+		AA1F6779209995D500C344BD /* TextPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPickerViewController.swift; sourceTree = "<group>"; };
+		AA1F677B2099960400C344BD /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		AA33D56B20A06CF000C8E67E /* ProgressViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewViewController.swift; sourceTree = "<group>"; };
+		AA33D56E20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewViewController.swift; sourceTree = "<group>"; };
+		AA33D57120A0897A00C8E67E /* ContainerViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContainerViews.storyboard; sourceTree = "<group>"; };
+		AA33D57420A0A09D00C8E67E /* StackViewAxisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewAxisViewController.swift; sourceTree = "<group>"; };
+		AA33D57620A0D13200C8E67E /* StackViewAlignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewAlignmentViewController.swift; sourceTree = "<group>"; };
+		AA33D57820A0D15300C8E67E /* StackViewDistributionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDistributionViewController.swift; sourceTree = "<group>"; };
+		AA33D57A20A0D16C00C8E67E /* StackViewSpacingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSpacingViewController.swift; sourceTree = "<group>"; };
+		AA33D57C20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewArrangedSubviewsViewController.swift; sourceTree = "<group>"; };
 		AA40384420832D040075AE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ViewCatalog/Base.lproj/TextViews.storyboard; sourceTree = "<group>"; };
 		AA403847208378F20075AE42 /* PlainTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextViewController.swift; sourceTree = "<group>"; };
 		AA4038492083B6370075AE42 /* MultilineLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineLabelViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +83,11 @@
 		AA83C0692086270000F28630 /* ButtonStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStateViewController.swift; sourceTree = "<group>"; };
 		AA83C06B20863CD600F28630 /* TextButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonViewController.swift; sourceTree = "<group>"; };
 		AA83C06D2086514C00F28630 /* ImageButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonViewController.swift; sourceTree = "<group>"; };
+		AAEA0C1D2097F75B002FF765 /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
+		AAEA0C1F20980702002FF765 /* CustomizingSegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingSegmentedControlViewController.swift; sourceTree = "<group>"; };
+		AAEA0C2220986343002FF765 /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
+		AAEB8E1D209882D500D2355D /* ContentViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ContentViews.storyboard; sourceTree = "<group>"; };
+		AAF76C852096D8D3008435E4 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +131,65 @@
 			path = ViewCatalog;
 			sourceTree = "<group>";
 		};
+		AA1F677520997CD700C344BD /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F677620997CE600C344BD /* ImageAnimationViewController.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		AA1F6778209995C900C344BD /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AA1F6779209995D500C344BD /* TextPickerViewController.swift */,
+				AA1F677B2099960400C344BD /* ImagePickerViewController.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		AA33D56A20A06CE100C8E67E /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D56B20A06CF000C8E67E /* ProgressViewViewController.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		AA33D56D20A075AA00C8E67E /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D56E20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift */,
+			);
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		AA33D57020A0894300C8E67E /* ContainerViews */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D57320A0A08D00C8E67E /* StackView */,
+				AA33D57120A0897A00C8E67E /* ContainerViews.storyboard */,
+			);
+			path = ContainerViews;
+			sourceTree = "<group>";
+		};
+		AA33D57320A0A08D00C8E67E /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D57420A0A09D00C8E67E /* StackViewAxisViewController.swift */,
+				AA33D57620A0D13200C8E67E /* StackViewAlignmentViewController.swift */,
+				AA33D57820A0D15300C8E67E /* StackViewDistributionViewController.swift */,
+				AA33D57A20A0D16C00C8E67E /* StackViewSpacingViewController.swift */,
+				AA33D57C20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		AA403842208329F40075AE42 /* SystemViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA33D57020A0894300C8E67E /* ContainerViews */,
+				AAEB8E1C209873D500D2355D /* ContentViews */,
 				AA40384620833EFE0075AE42 /* TextViews */,
 				AA7FAB0920846CB800E0F0B0 /* Controls */,
 			);
@@ -153,6 +241,9 @@
 		AA7FAB0920846CB800E0F0B0 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				AAEA0C2120986338002FF765 /* Stepper */,
+				AAEA0C1C2097F57B002FF765 /* SegmentedControl */,
+				AAF76C842096D8BB008435E4 /* PageControl */,
 				AA69C9B420874E7600169698 /* Slider */,
 				AA5EF2882086F0C800A89BEE /* Switch */,
 				AA83C068208626EF00F28630 /* Button */,
@@ -169,6 +260,43 @@
 				AA83C06D2086514C00F28630 /* ImageButtonViewController.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		AAEA0C1C2097F57B002FF765 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA0C1D2097F75B002FF765 /* SegmentedControlViewController.swift */,
+				AAEA0C1F20980702002FF765 /* CustomizingSegmentedControlViewController.swift */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		AAEA0C2120986338002FF765 /* Stepper */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA0C2220986343002FF765 /* StepperViewController.swift */,
+			);
+			path = Stepper;
+			sourceTree = "<group>";
+		};
+		AAEB8E1C209873D500D2355D /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D56D20A075AA00C8E67E /* ActivityIndicatorView */,
+				AA33D56A20A06CE100C8E67E /* ProgressView */,
+				AA1F6778209995C900C344BD /* PickerView */,
+				AA1F677520997CD700C344BD /* ImageView */,
+				AAEB8E1D209882D500D2355D /* ContentViews.storyboard */,
+			);
+			path = ContentViews;
+			sourceTree = "<group>";
+		};
+		AAF76C842096D8BB008435E4 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				AAF76C852096D8D3008435E4 /* PageControlViewController.swift */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +358,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7FAB0B20846CED00E0F0B0 /* Controls.storyboard in Resources */,
+				AA33D57220A0897A00C8E67E /* ContainerViews.storyboard in Resources */,
 				AA08D2CC2081DD7B0027424F /* LaunchScreen.storyboard in Resources */,
 				AA40384520832D040075AE42 /* TextViews.storyboard in Resources */,
 				AA4D3B232081E21800CC9F81 /* View.storyboard in Resources */,
 				AA08D2C92081DD7B0027424F /* Assets.xcassets in Resources */,
+				AAEB8E1E209882D500D2355D /* ContentViews.storyboard in Resources */,
 				AA08D2C72081DD7A0027424F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,22 +375,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA33D57920A0D15300C8E67E /* StackViewDistributionViewController.swift in Sources */,
+				AAEA0C2320986343002FF765 /* StepperViewController.swift in Sources */,
+				AA33D57720A0D13200C8E67E /* StackViewAlignmentViewController.swift in Sources */,
 				AA83C06A2086270000F28630 /* ButtonStateViewController.swift in Sources */,
 				AA403848208378F20075AE42 /* PlainTextViewController.swift in Sources */,
+				AAF76C862096D8D3008435E4 /* PageControlViewController.swift in Sources */,
 				AA08D2C22081DD7A0027424F /* AppDelegate.swift in Sources */,
 				AA4D3B4E2082728E00CC9F81 /* ClippingViewController.swift in Sources */,
+				AAEA0C1E2097F75B002FF765 /* SegmentedControlViewController.swift in Sources */,
+				AA33D56F20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift in Sources */,
 				AA4D3B2A20821A3600CC9F81 /* TagViewController.swift in Sources */,
+				AA1F677720997CE600C344BD /* ImageAnimationViewController.swift in Sources */,
+				AA1F677A209995D500C344BD /* TextPickerViewController.swift in Sources */,
+				AA1F677C2099960400C344BD /* ImagePickerViewController.swift in Sources */,
 				AA4D3B4C20826EB800CC9F81 /* HiddenViewController.swift in Sources */,
+				AA33D56C20A06CF000C8E67E /* ProgressViewViewController.swift in Sources */,
 				AA69C9BA2087536D00169698 /* NonContinuousSliderViewController.swift in Sources */,
 				AA40384A2083B6370075AE42 /* MultilineLabelViewController.swift in Sources */,
 				AA83C06C20863CD600F28630 /* TextButtonViewController.swift in Sources */,
+				AAEA0C2020980702002FF765 /* CustomizingSegmentedControlViewController.swift in Sources */,
 				AA69C9B62087533700169698 /* SimpleSliderViewController.swift in Sources */,
+				AA33D57B20A0D16C00C8E67E /* StackViewSpacingViewController.swift in Sources */,
 				AA83C06E2086514C00F28630 /* ImageButtonViewController.swift in Sources */,
 				AA4D3B28208204E200CC9F81 /* ContentModeViewController.swift in Sources */,
 				AA69C9B82087534F00169698 /* CustomSliderViewController.swift in Sources */,
 				AA4D3B2C20822B4700CC9F81 /* InteractionViewController.swift in Sources */,
+				AA33D57D20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift in Sources */,
 				AA5EF28A2086F0D500A89BEE /* SwitchViewController.swift in Sources */,
 				AA4D3B262081E56500CC9F81 /* CreatingViewObjectViewController.swift in Sources */,
+				AA33D57520A0A09D00C8E67E /* StackViewAxisViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

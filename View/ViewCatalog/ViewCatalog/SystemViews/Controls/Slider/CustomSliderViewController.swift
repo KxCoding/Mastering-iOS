@@ -23,6 +23,7 @@
 import UIKit
 
 class CustomSliderViewController: UIViewController {
+   @IBOutlet weak var slider: UISlider!
    
    override func viewDidLoad() {
       super.viewDidLoad()
