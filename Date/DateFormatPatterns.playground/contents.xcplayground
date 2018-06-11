@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+    <pages>
+        <page name='era'/>
+        <page name='year'/>
+        <page name='quarter'/>
+        <page name='month'/>
+        <page name='week'/>
+        <page name='day'/>
+        <page name='week day'/>
+        <page name='period'/>
+        <page name='hour'/>
+        <page name='minute'/>
+        <page name='second'/>
+        <page name='zone'/>
+    </pages>
+</playground>
