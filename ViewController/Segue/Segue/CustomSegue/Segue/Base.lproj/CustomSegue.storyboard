@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5J-SA-wfK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Segue-->
+        <scene sceneID="8f1-zb-CKY">
+            <objects>
+                <viewController id="B5J-SA-wfK" customClass="CustomSegueViewController" customModule="Segue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gL-Ko-rPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebw-Di-2RZ">
+                                <rect key="frame" x="107" y="100" width="160" height="30"/>
+                                <state key="normal" title="Perform Custom Segue"/>
+                                <connections>
+                                    <segue destination="ggy-Xv-jtG" kind="show" id="6S3-Sh-O6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ebw-Di-2RZ" firstAttribute="top" secondItem="sp8-Ri-VfF" secondAttribute="top" constant="36" id="gxl-cG-5yz"/>
+                            <constraint firstItem="Ebw-Di-2RZ" firstAttribute="centerX" secondItem="6gL-Ko-rPc" secondAttribute="centerX" id="haK-oC-1iu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sp8-Ri-VfF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Segue" id="FZ9-NV-FhR"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ka0-BV-jMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M5n-LV-Owh">
+            <objects>
+                <viewController id="ggy-Xv-jtG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6qY-0L-xsM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNc-V8-lZt">
+                                <rect key="frame" x="155" y="76" width="64" height="64"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="3ph-X6-7oD" kind="unwind" unwindAction="unwindToCustomSegue:" id="Fvj-jV-4xs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.63921568630000003" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DNc-V8-lZt" firstAttribute="centerX" secondItem="6qY-0L-xsM" secondAttribute="centerX" id="ZpU-Qm-pOc"/>
+                            <constraint firstItem="DNc-V8-lZt" firstAttribute="top" secondItem="Frq-Kb-Ike" secondAttribute="top" constant="12" id="gJ0-bb-VFS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Frq-Kb-Ike"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZsH-JT-rmJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlH-nc-fW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3ph-X6-7oD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="64" height="64"/>
+    </resources>
+</document>

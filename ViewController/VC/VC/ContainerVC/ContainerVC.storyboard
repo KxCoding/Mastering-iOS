@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="87W-jh-QCc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Container View Controller-->
+        <scene sceneID="dYI-d6-vbg">
+            <objects>
+                <viewController title="Container View Controller" id="87W-jh-QCc" customClass="ContainerViewController" customModule="VC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGF-UZ-wHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FbH-9A-6ae"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2L-TB-26x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="372"/>
+        </scene>
+        <!--Top View Controller-->
+        <scene sceneID="Xb4-YP-QUL">
+            <objects>
+                <viewController id="7wj-10-YsG" customClass="TopViewController" customModule="VC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1RK-dq-4AH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-zD-mxk">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SvI-zD-mxk" firstAttribute="top" secondItem="laE-zV-5On" secondAttribute="top" constant="20" id="CbD-lU-OCV"/>
+                            <constraint firstItem="SvI-zD-mxk" firstAttribute="leading" secondItem="laE-zV-5On" secondAttribute="leading" constant="20" id="Ciq-nq-MnZ"/>
+                            <constraint firstItem="laE-zV-5On" firstAttribute="bottom" secondItem="SvI-zD-mxk" secondAttribute="bottom" constant="20" id="ZXh-BY-GNP"/>
+                            <constraint firstItem="laE-zV-5On" firstAttribute="trailing" secondItem="SvI-zD-mxk" secondAttribute="trailing" constant="20" id="qiI-Q1-Y4F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laE-zV-5On"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0l-zS-loB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2282" y="157"/>
+        </scene>
+        <!--Bottom View Controller-->
+        <scene sceneID="dnr-kN-er1">
+            <objects>
+                <viewController storyboardIdentifier="BottomViewController" id="YEl-7s-WtN" customClass="BottomViewController" customModule="VC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHC-bu-V4x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuj-io-HXv">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-dw-tik">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xn7-uW-ZFp"/>
+                                </constraints>
+                                <state key="normal" title="Remove from Parent">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeFromParent:" destination="YEl-7s-WtN" eventType="touchUpInside" id="cEa-7g-erb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bdV-dw-tik" firstAttribute="leading" secondItem="IZy-VC-IXf" secondAttribute="leading" constant="20" id="1um-jl-TPS"/>
+                            <constraint firstItem="IZy-VC-IXf" firstAttribute="bottom" secondItem="Xuj-io-HXv" secondAttribute="bottom" constant="20" id="1yK-hj-Ls4"/>
+                            <constraint firstItem="Xuj-io-HXv" firstAttribute="leading" secondItem="IZy-VC-IXf" secondAttribute="leading" constant="20" id="2U3-rb-7PR"/>
+                            <constraint firstItem="IZy-VC-IXf" firstAttribute="bottom" secondItem="bdV-dw-tik" secondAttribute="bottom" constant="20" id="8V5-GV-fsO"/>
+                            <constraint firstItem="IZy-VC-IXf" firstAttribute="trailing" secondItem="Xuj-io-HXv" secondAttribute="trailing" constant="20" id="Pt7-4P-y4I"/>
+                            <constraint firstItem="Xuj-io-HXv" firstAttribute="top" secondItem="IZy-VC-IXf" secondAttribute="top" constant="20" id="TFw-cY-HtW"/>
+                            <constraint firstItem="IZy-VC-IXf" firstAttribute="trailing" secondItem="bdV-dw-tik" secondAttribute="trailing" constant="20" id="uqR-4B-od7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IZy-VC-IXf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWJ-Rj-V2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2281" y="866"/>
+        </scene>
+    </scenes>
+</document>

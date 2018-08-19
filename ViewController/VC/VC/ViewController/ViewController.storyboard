@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cDu-Wj-iiu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="c0v-1O-W4i">
+            <objects>
+                <viewController title="View Controller" id="cDu-Wj-iiu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFm-Rt-JxD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="061-Rl-zUW">
+                                <rect key="frame" x="50" y="258.5" width="275" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLx-9Q-QnA">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="65"/>
+                                        <state key="normal" title="Storyboard"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-mf-zvq">
+                                        <rect key="frame" x="0.0" y="85" width="275" height="65"/>
+                                        <state key="normal" title="Manual"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="W6w-BQ-0kz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="061-Rl-zUW" firstAttribute="leading" secondItem="aFu-KJ-4bi" secondAttribute="leading" constant="50" id="79M-Ej-06c"/>
+                            <constraint firstItem="061-Rl-zUW" firstAttribute="centerY" secondItem="OFm-Rt-JxD" secondAttribute="centerY" id="pmx-5T-bQU"/>
+                            <constraint firstItem="aFu-KJ-4bi" firstAttribute="trailing" secondItem="061-Rl-zUW" secondAttribute="trailing" constant="50" id="thG-Md-FI0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFu-KJ-4bi"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxJ-AA-VdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="20"/>
+        </scene>
+    </scenes>
+</document>

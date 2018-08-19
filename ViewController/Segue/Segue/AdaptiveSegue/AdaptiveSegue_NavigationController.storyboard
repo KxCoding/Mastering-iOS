@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zfS-hP-XZw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adaptive Segue-->
+        <scene sceneID="a5i-0l-3VI">
+            <objects>
+                <viewController id="PcL-tu-mZ7" customClass="HostViewController" customModule="Segue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Av2-oL-RpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EL2-Mo-15O">
+                                <rect key="frame" x="121.5" y="231.5" width="132" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhY-aF-0Or">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Push Segue"/>
+                                        <connections>
+                                            <segue destination="0pP-ZP-MZ6" kind="show" id="pqs-Dv-LcQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0M-H2-jsH">
+                                        <rect key="frame" x="0.0" y="56" width="132" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Replace Segue"/>
+                                        <connections>
+                                            <segue destination="0pP-ZP-MZ6" kind="showDetail" id="4Ih-4Q-QSn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4B-Za-s5P">
+                                        <rect key="frame" x="0.0" y="112" width="132" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Modal Segue"/>
+                                        <connections>
+                                            <segue destination="0pP-ZP-MZ6" kind="presentation" id="6MZ-Mo-rgI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-tk-ddb">
+                                        <rect key="frame" x="0.0" y="168" width="132" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Popover Segue"/>
+                                        <connections>
+                                            <segue destination="0pP-ZP-MZ6" kind="popoverPresentation" popoverAnchorView="zdt-tk-ddb" id="gmF-Qc-4Su">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EL2-Mo-15O" firstAttribute="centerX" secondItem="Av2-oL-RpC" secondAttribute="centerX" id="0ZW-NN-bm0"/>
+                            <constraint firstItem="EL2-Mo-15O" firstAttribute="centerY" secondItem="Av2-oL-RpC" secondAttribute="centerY" id="RIb-Ou-OhL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KPs-Al-nIn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adaptive Segue" id="FT6-Xk-7Da"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Rq-gZ-UQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.20000000000005" y="84.107946026986511"/>
+        </scene>
+        <!--Hello-->
+        <scene sceneID="n0U-HK-ZqF">
+            <objects>
+                <viewController title="Hello" id="0pP-ZP-MZ6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhN-Zn-SSb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0Y-05-IQv">
+                                <rect key="frame" x="112.5" y="303.5" width="150" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI1-AK-diQ">
+                                <rect key="frame" x="295" y="36" width="64" height="64"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="nkN-QY-6Pt" kind="unwind" unwindAction="unwindToHost:" id="3F0-dF-uoE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uu8-JQ-rsK" firstAttribute="trailing" secondItem="GI1-AK-diQ" secondAttribute="trailing" constant="16" id="2ZW-QQ-Ebs"/>
+                            <constraint firstItem="GI1-AK-diQ" firstAttribute="top" secondItem="uu8-JQ-rsK" secondAttribute="top" constant="16" id="Sdt-UL-kH3"/>
+                            <constraint firstItem="S0Y-05-IQv" firstAttribute="centerX" secondItem="fhN-Zn-SSb" secondAttribute="centerX" id="V5f-a7-7YV"/>
+                            <constraint firstItem="S0Y-05-IQv" firstAttribute="centerY" secondItem="fhN-Zn-SSb" secondAttribute="centerY" id="t0j-R1-K13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uu8-JQ-rsK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh6-dp-hfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nkN-QY-6Pt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1834" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c7Q-af-JpF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zfS-hP-XZw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Hek-C5-gcE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PcL-tu-mZ7" kind="relationship" relationship="rootViewController" id="Q0E-cE-Zg7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bC-PH-tLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="64" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6MZ-Mo-rgI"/>
+    </inferredMetricsTieBreakers>
+</document>
