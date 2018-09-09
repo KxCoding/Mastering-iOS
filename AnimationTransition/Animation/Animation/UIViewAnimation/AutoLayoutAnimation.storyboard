@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLm-gT-ocp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Animation-->
+        <scene sceneID="I3E-H6-mIu">
+            <objects>
+                <viewController id="TLm-gT-ocp" customClass="AutoLayoutAnimationViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5H-oI-DZK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-md-zBb">
+                                <rect key="frame" x="162" y="308" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1x2-Gd-OpE"/>
+                                    <constraint firstAttribute="width" constant="50" id="Nua-Ep-BtN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WYY-md-zBb" firstAttribute="centerX" secondItem="g5H-oI-DZK" secondAttribute="centerX" id="Q4n-RK-yFn"/>
+                            <constraint firstItem="WYY-md-zBb" firstAttribute="centerY" secondItem="g5H-oI-DZK" secondAttribute="centerY" id="cIr-Dm-g1I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rQv-5T-7I0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout Animation" id="4WS-lT-AGk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="6KV-Aa-3kc">
+                            <connections>
+                                <action selector="animate:" destination="TLm-gT-ocp" id="fwg-Fa-5uq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="heightConstraint" destination="1x2-Gd-OpE" id="b8B-B2-q1h"/>
+                        <outlet property="redView" destination="WYY-md-zBb" id="eDR-nf-6oM"/>
+                        <outlet property="widthConstraint" destination="Nua-Ep-BtN" id="N0I-dl-gRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFi-2h-p8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="361"/>
+        </scene>
+    </scenes>
+</document>

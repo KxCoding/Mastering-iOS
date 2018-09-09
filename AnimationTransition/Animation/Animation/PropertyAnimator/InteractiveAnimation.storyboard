@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eXV-dn-atc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interactive Animation-->
+        <scene sceneID="hz9-dT-8zC">
+            <objects>
+                <viewController id="eXV-dn-atc" customClass="InteractiveAnimationViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4r-Fx-Anb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-Yy-FG7">
+                                <rect key="frame" x="28" y="616" width="319" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="eXV-dn-atc" eventType="valueChanged" id="DGd-Tw-DzM"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27J-ye-OZa">
+                                <rect key="frame" x="24" y="96" width="57" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8hZ-zu-9yg" firstAttribute="bottom" secondItem="0g7-Yy-FG7" secondAttribute="bottom" constant="21" id="9oo-U1-4Iv"/>
+                            <constraint firstItem="0g7-Yy-FG7" firstAttribute="leading" secondItem="8hZ-zu-9yg" secondAttribute="leading" constant="30" id="Iav-8s-3bG"/>
+                            <constraint firstItem="8hZ-zu-9yg" firstAttribute="trailing" secondItem="0g7-Yy-FG7" secondAttribute="trailing" constant="30" id="WAg-NS-rBp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8hZ-zu-9yg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interactive Animation" id="wmW-be-0i8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="pLE-iY-scP">
+                            <connections>
+                                <action selector="animate:" destination="eXV-dn-atc" id="QJQ-bv-Zu3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="redView" destination="27J-ye-OZa" id="v3R-aX-ttY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nq3-bv-nf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.8" y="365.66716641679164"/>
+        </scene>
+    </scenes>
+</document>

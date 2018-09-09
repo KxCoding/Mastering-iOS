@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P9Q-Jl-Nu0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Presentation Style-->
+        <scene sceneID="bMD-SE-Xke">
+            <objects>
+                <viewController id="P9Q-Jl-Nu0" customClass="PresentationStyleViewController" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DIi-gn-pXx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s0R-tw-dMx">
+                                <rect key="frame" x="50" y="105.5" width="274" height="456"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-Y9-0kZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Full Screen"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="L16-EO-i3I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-RK-exK">
+                                        <rect key="frame" x="0.0" y="68" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Page Sheet"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="Hrs-Zn-uzx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IE-fN-nP2">
+                                        <rect key="frame" x="0.0" y="136" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Form Sheet"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="6Ag-kV-Req"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A4-fm-elv">
+                                        <rect key="frame" x="0.0" y="204" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Current Context"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="XyA-Gn-pWC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-or-Idg">
+                                        <rect key="frame" x="0.0" y="272" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Over Full Screen"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="Jfn-GB-N5O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bic-rQ-Xya">
+                                        <rect key="frame" x="0.0" y="340" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Over Current Context"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="HWK-7Y-pLn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-j3-yiV">
+                                        <rect key="frame" x="0.0" y="408" width="274" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Popover"/>
+                                        <connections>
+                                            <action selector="present:" destination="P9Q-Jl-Nu0" eventType="touchUpInside" id="l7b-P8-5DO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s0R-tw-dMx" firstAttribute="centerX" secondItem="DIi-gn-pXx" secondAttribute="centerX" id="4iX-sG-nBu"/>
+                            <constraint firstItem="s0R-tw-dMx" firstAttribute="centerY" secondItem="DIi-gn-pXx" secondAttribute="centerY" id="cgF-0v-OhB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZOz-N6-fkA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Presentation Style" id="nmW-Fa-MaW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5lf-92-jIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="244"/>
+        </scene>
+    </scenes>
+</document>

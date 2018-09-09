@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA2E86E4213BCC460053628C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2E86E3213BCC460053628C /* AppDelegate.swift */; };
+		AA2E86E9213BCC460053628C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2E86E7213BCC460053628C /* Main.storyboard */; };
+		AA2E86EB213BCC460053628C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2E86EA213BCC460053628C /* Assets.xcassets */; };
+		AA2E86EE213BCC460053628C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2E86EC213BCC460053628C /* LaunchScreen.storyboard */; };
+		AA62A70D213BD22B008EF02A /* SimpleUIViewAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A70C213BD22B008EF02A /* SimpleUIViewAnimation.storyboard */; };
+		AA62A70F213BD261008EF02A /* SimpleUIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A70E213BD261008EF02A /* SimpleUIViewAnimationViewController.swift */; };
+		AA62A711213BE529008EF02A /* AnimationOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A710213BE529008EF02A /* AnimationOptions.storyboard */; };
+		AA62A713213BE53D008EF02A /* AnimationOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A712213BE53D008EF02A /* AnimationOptionsViewController.swift */; };
+		AA62A715213BF093008EF02A /* UIViewSpringAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A714213BF093008EF02A /* UIViewSpringAnimation.storyboard */; };
+		AA62A717213BF0B6008EF02A /* UIViewSpringAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A716213BF0B6008EF02A /* UIViewSpringAnimationViewController.swift */; };
+		AA62A719213C003E008EF02A /* UIViewKeyframeAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A718213C003E008EF02A /* UIViewKeyframeAnimation.storyboard */; };
+		AA62A71B213C004C008EF02A /* UIViewKeyframeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A71A213C004C008EF02A /* UIViewKeyframeAnimationViewController.swift */; };
+		AA62A71D213C0D86008EF02A /* AutoLayoutAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A71C213C0D86008EF02A /* AutoLayoutAnimation.storyboard */; };
+		AA62A71F213C0D9B008EF02A /* AutoLayoutAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A71E213C0D9B008EF02A /* AutoLayoutAnimationViewController.swift */; };
+		AA62A722213C226E008EF02A /* PropertyAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A721213C226E008EF02A /* PropertyAnimator.storyboard */; };
+		AA62A724213C22CA008EF02A /* PropertyAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A723213C22CA008EF02A /* PropertyAnimatorViewController.swift */; };
+		AA62A726213C4AD1008EF02A /* InteractiveAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A725213C4AD1008EF02A /* InteractiveAnimation.storyboard */; };
+		AA62A728213C4AE1008EF02A /* InteractiveAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A727213C4AE1008EF02A /* InteractiveAnimationViewController.swift */; };
+		AA62A72B213C566A008EF02A /* MotionEffect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA62A72A213C566A008EF02A /* MotionEffect.storyboard */; };
+		AA62A72D213C567B008EF02A /* MotionEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62A72C213C567B008EF02A /* MotionEffectViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA2E86E0213BCC460053628C /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2E86E3213BCC460053628C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA2E86E8213BCC460053628C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA2E86EA213BCC460053628C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA2E86ED213BCC460053628C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA2E86EF213BCC460053628C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA62A70C213BD22B008EF02A /* SimpleUIViewAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleUIViewAnimation.storyboard; sourceTree = "<group>"; };
+		AA62A70E213BD261008EF02A /* SimpleUIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewAnimationViewController.swift; sourceTree = "<group>"; };
+		AA62A710213BE529008EF02A /* AnimationOptions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimationOptions.storyboard; sourceTree = "<group>"; };
+		AA62A712213BE53D008EF02A /* AnimationOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionsViewController.swift; sourceTree = "<group>"; };
+		AA62A714213BF093008EF02A /* UIViewSpringAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIViewSpringAnimation.storyboard; sourceTree = "<group>"; };
+		AA62A716213BF0B6008EF02A /* UIViewSpringAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSpringAnimationViewController.swift; sourceTree = "<group>"; };
+		AA62A718213C003E008EF02A /* UIViewKeyframeAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIViewKeyframeAnimation.storyboard; sourceTree = "<group>"; };
+		AA62A71A213C004C008EF02A /* UIViewKeyframeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewKeyframeAnimationViewController.swift; sourceTree = "<group>"; };
+		AA62A71C213C0D86008EF02A /* AutoLayoutAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutoLayoutAnimation.storyboard; sourceTree = "<group>"; };
+		AA62A71E213C0D9B008EF02A /* AutoLayoutAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutAnimationViewController.swift; sourceTree = "<group>"; };
+		AA62A721213C226E008EF02A /* PropertyAnimator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PropertyAnimator.storyboard; sourceTree = "<group>"; };
+		AA62A723213C22CA008EF02A /* PropertyAnimatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorViewController.swift; sourceTree = "<group>"; };
+		AA62A725213C4AD1008EF02A /* InteractiveAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractiveAnimation.storyboard; sourceTree = "<group>"; };
+		AA62A727213C4AE1008EF02A /* InteractiveAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveAnimationViewController.swift; sourceTree = "<group>"; };
+		AA62A72A213C566A008EF02A /* MotionEffect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MotionEffect.storyboard; sourceTree = "<group>"; };
+		AA62A72C213C567B008EF02A /* MotionEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionEffectViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA2E86DD213BCC460053628C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA2E86D7213BCC460053628C = {
+			isa = PBXGroup;
+			children = (
+				AA2E86E2213BCC460053628C /* Animation */,
+				AA2E86E1213BCC460053628C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA2E86E1213BCC460053628C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA2E86E0213BCC460053628C /* Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA2E86E2213BCC460053628C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				AA62A729213C5346008EF02A /* MotionEffect */,
+				AA62A720213C2196008EF02A /* PropertyAnimator */,
+				AA62A70B213BCE71008EF02A /* UIViewAnimation */,
+				AA62A70A213BCCED008EF02A /* Predefined */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		AA62A70A213BCCED008EF02A /* Predefined */ = {
+			isa = PBXGroup;
+			children = (
+				AA2E86E3213BCC460053628C /* AppDelegate.swift */,
+				AA2E86E7213BCC460053628C /* Main.storyboard */,
+				AA2E86EA213BCC460053628C /* Assets.xcassets */,
+				AA2E86EC213BCC460053628C /* LaunchScreen.storyboard */,
+				AA2E86EF213BCC460053628C /* Info.plist */,
+			);
+			name = Predefined;
+			sourceTree = "<group>";
+		};
+		AA62A70B213BCE71008EF02A /* UIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AA62A71C213C0D86008EF02A /* AutoLayoutAnimation.storyboard */,
+				AA62A71E213C0D9B008EF02A /* AutoLayoutAnimationViewController.swift */,
+				AA62A718213C003E008EF02A /* UIViewKeyframeAnimation.storyboard */,
+				AA62A71A213C004C008EF02A /* UIViewKeyframeAnimationViewController.swift */,
+				AA62A714213BF093008EF02A /* UIViewSpringAnimation.storyboard */,
+				AA62A716213BF0B6008EF02A /* UIViewSpringAnimationViewController.swift */,
+				AA62A710213BE529008EF02A /* AnimationOptions.storyboard */,
+				AA62A712213BE53D008EF02A /* AnimationOptionsViewController.swift */,
+				AA62A70C213BD22B008EF02A /* SimpleUIViewAnimation.storyboard */,
+				AA62A70E213BD261008EF02A /* SimpleUIViewAnimationViewController.swift */,
+			);
+			path = UIViewAnimation;
+			sourceTree = "<group>";
+		};
+		AA62A720213C2196008EF02A /* PropertyAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				AA62A725213C4AD1008EF02A /* InteractiveAnimation.storyboard */,
+				AA62A727213C4AE1008EF02A /* InteractiveAnimationViewController.swift */,
+				AA62A721213C226E008EF02A /* PropertyAnimator.storyboard */,
+				AA62A723213C22CA008EF02A /* PropertyAnimatorViewController.swift */,
+			);
+			path = PropertyAnimator;
+			sourceTree = "<group>";
+		};
+		AA62A729213C5346008EF02A /* MotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				AA62A72A213C566A008EF02A /* MotionEffect.storyboard */,
+				AA62A72C213C567B008EF02A /* MotionEffectViewController.swift */,
+			);
+			path = MotionEffect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA2E86DF213BCC460053628C /* Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2E86F2213BCC460053628C /* Build configuration list for PBXNativeTarget "Animation" */;
+			buildPhases = (
+				AA2E86DC213BCC460053628C /* Sources */,
+				AA2E86DD213BCC460053628C /* Frameworks */,
+				AA2E86DE213BCC460053628C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Animation;
+			productName = Animation;
+			productReference = AA2E86E0213BCC460053628C /* Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA2E86D8213BCC460053628C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Keun young Kim";
+				TargetAttributes = {
+					AA2E86DF213BCC460053628C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AA2E86DB213BCC460053628C /* Build configuration list for PBXProject "Animation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA2E86D7213BCC460053628C;
+			productRefGroup = AA2E86E1213BCC460053628C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA2E86DF213BCC460053628C /* Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA2E86DE213BCC460053628C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA62A70D213BD22B008EF02A /* SimpleUIViewAnimation.storyboard in Resources */,
+				AA2E86EE213BCC460053628C /* LaunchScreen.storyboard in Resources */,
+				AA62A719213C003E008EF02A /* UIViewKeyframeAnimation.storyboard in Resources */,
+				AA62A72B213C566A008EF02A /* MotionEffect.storyboard in Resources */,
+				AA2E86EB213BCC460053628C /* Assets.xcassets in Resources */,
+				AA62A726213C4AD1008EF02A /* InteractiveAnimation.storyboard in Resources */,
+				AA62A722213C226E008EF02A /* PropertyAnimator.storyboard in Resources */,
+				AA62A71D213C0D86008EF02A /* AutoLayoutAnimation.storyboard in Resources */,
+				AA2E86E9213BCC460053628C /* Main.storyboard in Resources */,
+				AA62A715213BF093008EF02A /* UIViewSpringAnimation.storyboard in Resources */,
+				AA62A711213BE529008EF02A /* AnimationOptions.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA2E86DC213BCC460053628C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA62A728213C4AE1008EF02A /* InteractiveAnimationViewController.swift in Sources */,
+				AA62A724213C22CA008EF02A /* PropertyAnimatorViewController.swift in Sources */,
+				AA62A71F213C0D9B008EF02A /* AutoLayoutAnimationViewController.swift in Sources */,
+				AA62A70F213BD261008EF02A /* SimpleUIViewAnimationViewController.swift in Sources */,
+				AA62A71B213C004C008EF02A /* UIViewKeyframeAnimationViewController.swift in Sources */,
+				AA62A713213BE53D008EF02A /* AnimationOptionsViewController.swift in Sources */,
+				AA62A72D213C567B008EF02A /* MotionEffectViewController.swift in Sources */,
+				AA2E86E4213BCC460053628C /* AppDelegate.swift in Sources */,
+				AA62A717213BF0B6008EF02A /* UIViewSpringAnimationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA2E86E7213BCC460053628C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA2E86E8213BCC460053628C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA2E86EC213BCC460053628C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA2E86ED213BCC460053628C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA2E86F0213BCC460053628C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA2E86F1213BCC460053628C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA2E86F3213BCC460053628C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GG6YUX8VB;
+				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kxcoding.Animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA2E86F4213BCC460053628C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GG6YUX8VB;
+				INFOPLIST_FILE = Animation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kxcoding.Animation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA2E86DB213BCC460053628C /* Build configuration list for PBXProject "Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2E86F0213BCC460053628C /* Debug */,
+				AA2E86F1213BCC460053628C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2E86F2213BCC460053628C /* Build configuration list for PBXNativeTarget "Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2E86F3213BCC460053628C /* Debug */,
+				AA2E86F4213BCC460053628C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA2E86D8213BCC460053628C /* Project object */;
+}

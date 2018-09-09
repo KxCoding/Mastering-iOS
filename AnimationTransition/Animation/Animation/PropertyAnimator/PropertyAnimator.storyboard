@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KcS-0A-Iye">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Property Animator-->
+        <scene sceneID="n6M-HU-4rH">
+            <objects>
+                <viewController id="KcS-0A-Iye" customClass="PropertyAnimatorViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="seT-oH-Nd8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1N-D9-HFC">
+                                <rect key="frame" x="50" y="100" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzT-9x-jme">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="reset:" destination="KcS-0A-Iye" eventType="touchUpInside" id="j4X-gf-Agx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2if-3n-wY0">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="eaL-ij-BQm">
+                                        <connections>
+                                            <action selector="pause:" destination="KcS-0A-Iye" id="dYi-UK-cLY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="P9o-xX-okx"/>
+                                    <barButtonItem systemItem="play" id="6fi-K1-HL2">
+                                        <connections>
+                                            <action selector="animate:" destination="KcS-0A-Iye" id="q3J-kF-aEA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mql-ti-W6f"/>
+                                    <barButtonItem title="Resume" id="nYl-if-evv">
+                                        <connections>
+                                            <action selector="resume:" destination="KcS-0A-Iye" id="KeB-4G-bkE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1Vq-TA-7AG"/>
+                                    <barButtonItem title="Stop" id="nW2-ae-U7g">
+                                        <connections>
+                                            <action selector="stop:" destination="KcS-0A-Iye" id="38j-Zx-p5c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xtD-fX-GYC"/>
+                                    <barButtonItem systemItem="add" id="pTa-3Y-XIR">
+                                        <connections>
+                                            <action selector="add:" destination="KcS-0A-Iye" id="vE7-gN-zmv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2if-3n-wY0" firstAttribute="leading" secondItem="Srw-0y-o6F" secondAttribute="leading" id="9eH-ch-LeS"/>
+                            <constraint firstItem="2if-3n-wY0" firstAttribute="trailing" secondItem="Srw-0y-o6F" secondAttribute="trailing" id="NUR-zb-S9g"/>
+                            <constraint firstItem="2if-3n-wY0" firstAttribute="bottom" secondItem="Srw-0y-o6F" secondAttribute="bottom" id="aTv-f5-zVH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Srw-0y-o6F"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Property Animator" id="zcO-WW-HUj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="redView" destination="t1N-D9-HFC" id="crV-j0-kyl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAg-TL-78H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.8" y="291.90404797601201"/>
+        </scene>
+    </scenes>
+</document>
