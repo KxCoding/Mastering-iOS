@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UBN-Sc-cQm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dispatch Semaphore-->
+        <scene sceneID="5R1-xb-PU9">
+            <objects>
+                <viewController id="UBN-Sc-cQm" customClass="DispatchSemaphoreViewController" customModule="Concurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nj6-1b-VBn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MOp-Hi-Kqb">
+                                <rect key="frame" x="33.5" y="521" width="308" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-jZ-AQm">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Synchronize"/>
+                                        <connections>
+                                            <action selector="synchronize:" destination="UBN-Sc-cQm" eventType="touchUpInside" id="ZhM-VX-j8m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-Sr-Njo">
+                                        <rect key="frame" x="0.0" y="68" width="308" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Control Execution Order"/>
+                                        <connections>
+                                            <action selector="controlExecutionOrder:" destination="UBN-Sc-cQm" eventType="touchUpInside" id="G9j-lA-KXv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e85-N2-vrj">
+                                <rect key="frame" x="166" y="291" width="43" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" red="0.2470588235" green="0.67450980390000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e85-N2-vrj" firstAttribute="centerY" secondItem="Nj6-1b-VBn" secondAttribute="centerY" id="Kun-aM-LW0"/>
+                            <constraint firstItem="e85-N2-vrj" firstAttribute="centerX" secondItem="Nj6-1b-VBn" secondAttribute="centerX" id="oge-L7-p84"/>
+                            <constraint firstItem="Rcy-vJ-BWL" firstAttribute="bottom" secondItem="MOp-Hi-Kqb" secondAttribute="bottom" constant="30" id="uGO-FC-R1i"/>
+                            <constraint firstItem="MOp-Hi-Kqb" firstAttribute="centerX" secondItem="Nj6-1b-VBn" secondAttribute="centerX" id="vmb-P2-Gdp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rcy-vJ-BWL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dispatch Semaphore" id="PeA-IK-eqy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="valueLabel" destination="e85-N2-vrj" id="lhf-3F-6tA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJn-K7-HQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525.5999999999999" y="571.66416791604206"/>
+        </scene>
+    </scenes>
+</document>
