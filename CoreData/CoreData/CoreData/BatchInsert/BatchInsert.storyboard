@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9S6-rN-dcp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Batch Insert-->
+        <scene sceneID="jkP-cq-cRl">
+            <objects>
+                <viewController id="9S6-rN-dcp" customClass="BatchInsertViewController" customModule="CoreDataSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4B-b9-dzb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cko-x3-o5H">
+                                <rect key="frame" x="169" y="329.5" width="37" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-Yt-maN">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.67450980390000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xXM-1n-c7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Batch Insert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="batchInsert:" destination="9S6-rN-dcp" eventType="touchUpInside" id="k9X-g6-y4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cko-x3-o5H" firstAttribute="centerX" secondItem="O27-n9-98N" secondAttribute="centerX" id="67A-Bu-X0J"/>
+                            <constraint firstItem="Q6g-Yt-maN" firstAttribute="leading" secondItem="O27-n9-98N" secondAttribute="leading" constant="16" id="711-0N-0UC"/>
+                            <constraint firstItem="O27-n9-98N" firstAttribute="trailing" secondItem="Q6g-Yt-maN" secondAttribute="trailing" constant="16" id="9JQ-G7-e1f"/>
+                            <constraint firstItem="cko-x3-o5H" firstAttribute="centerY" secondItem="O27-n9-98N" secondAttribute="centerY" id="PMn-ew-lIw"/>
+                            <constraint firstItem="O27-n9-98N" firstAttribute="bottom" secondItem="Q6g-Yt-maN" secondAttribute="bottom" constant="20" id="bgc-P4-3UM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O27-n9-98N"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Batch Insert" id="wIu-zO-0fS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="countLabel" destination="cko-x3-o5H" id="kLR-6z-h4z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoN-Et-HeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-218.1409295352324"/>
+        </scene>
+    </scenes>
+</document>

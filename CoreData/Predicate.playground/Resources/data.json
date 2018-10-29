@@ -1,0 +1,225 @@
+[
+   {
+      "id" : 1,
+      "name" : "Management",
+      "employees" : [
+         {
+            "age" : 27,
+            "name" : "Mariana Sanders",
+            "salary" : 34000,
+            "address" : "8148 Pilgrim Circle Phoenixville, PA 19460"
+         },
+         {
+            "age" : 31,
+            "name" : "Aniyah Pace",
+            "salary" : 80000,
+            "address" : "646 Nut Swamp Ave. Hampton, VA 23666"
+         }
+      ]
+   },
+   {
+      "id" : 2,
+      "name" : "Design",
+      "employees" : [
+         {
+            "age" : 23,
+            "name" : "Zaire May",
+            "salary" : 39000,
+            "address" : "59 Goldfield Court Saint Louis, MO 63109"
+         },
+         {
+            "age" : 46,
+            "name" : "Draven Sellers",
+            "salary" : 76000,
+            "address" : "51 N. Summer St. West Orange, NJ 07052"
+         },
+         {
+            "age" : 25,
+            "name" : "Paxton Sellers",
+            "salary" : 27000,
+            "address" : "9560 Van Dyke Street La Porte, IN 46350"
+         },
+         {
+            "age" : 46,
+            "name" : "Elian Strong",
+            "salary" : 56000,
+            "address" : "43 E. Augusta Lane San Carlos, CA 94070"
+         },
+         {
+            "age" : 21,
+            "name" : "Bronson Villegas",
+            "salary" : 85000,
+            "address" : "271 Lookout Road Harrisburg, PA 17109"
+         },
+         {
+            "age" : 44,
+            "name" : "Zachariah Beltran",
+            "salary" : 71000,
+            "address" : "323 Railroad Drive Homestead, FL 33030"
+         },
+         {
+            "age" : 29,
+            "name" : "Aydan Hinton",
+            "salary" : 78000,
+            "address" : "360 E. Williams Dr. Muncie, IN 47302"
+         }
+      ]
+   },
+   {
+      "id" : 3,
+      "name" : "Development",
+      "employees" : [
+         {
+            "age" : 29,
+            "name" : "Samantha Heath",
+            "salary" : 80000,
+            "address" : "7397 Lees Creek Ave. Ponte Vedra Beach, FL 32082"
+         },
+         {
+            "age" : 40,
+            "name" : "Jerimiah Nunez",
+            "salary" : 30000,
+            "address" : "34 6th Street Elk Grove Village, IL 60007"
+         },
+         {
+            "age" : 32,
+            "name" : "Alivia Carey",
+            "salary" : 80000,
+            "address" : "336 Grove Ave. Lynn, MA 01902"
+         },
+         {
+            "age" : 34,
+            "name" : "Wyatt Charles",
+            "salary" : 88000,
+            "address" : "463 Helen Avenue Greenville, NC 27834"
+         }
+      ]
+   },
+   {
+      "id" : 4,
+      "name" : "HR",
+      "employees" : [
+         {
+            "age" : 20,
+            "name" : "Jaidyn Ayala",
+            "salary" : 56000,
+            "address" : "505 Rockaway St. Edison, NJ 08817"
+         },
+         {
+            "age" : 47,
+            "name" : "Kamron Deleon",
+            "salary" : 63000,
+            "address" : "620 N. Jennings Lane Rowlett, TX 75088"
+         },
+         {
+            "age" : 47,
+            "name" : "Luciana Shea",
+            "salary" : 32000,
+            "address" : "81 Amherst Court Manchester Township, NJ 08759"
+         },
+         {
+            "age" : 39,
+            "name" : "Boston Carney",
+            "salary" : 36000,
+            "address" : "733 Wild Rose Rd. Massapequa, NY 11758"
+         },
+         {
+            "age" : 35,
+            "name" : "Aarav Duran",
+            "salary" : 77000,
+            "address" : "299 Roosevelt Rd. Gettysburg, PA 17325"
+         },
+         {
+            "age" : 20,
+            "name" : "Ross Joseph",
+            "salary" : 45000,
+            "address" : "8699 South College Lane West Haven, CT 06516"
+         }
+      ]
+   },
+   {
+      "id" : 5,
+      "name" : "Planning",
+      "employees" : [
+         {
+            "age" : 21,
+            "name" : "Jovanni Braun",
+            "salary" : 55000,
+            "address" : "50 Sugar St. Port Saint Lucie, FL 34952"
+         },
+         {
+            "age" : 28,
+            "name" : "Londyn Williams",
+            "salary" : 88000,
+            "address" : "29 Oakwood Rd. Cranston, RI 02920"
+         },
+         {
+            "age" : 36,
+            "name" : "Cassius Bishop",
+            "salary" : 30000,
+            "address" : "9716 Tallwood Street Germantown, MD 20874"
+         }
+      ]
+   },
+   {
+      "id" : 6,
+      "name" : "Finance",
+      "employees" : [
+         {
+            "age" : 20,
+            "name" : "Rosemary Gibbs",
+            "salary" : 30000,
+            "address" : "9561 S. St Margarets Ave. Hackettstown, NJ 07840"
+         },
+         {
+            "age" : 26,
+            "name" : "Aidan Bray",
+            "salary" : 74000,
+            "address" : "211 Arch Court Oak Ridge, TN 37830"
+         },
+         {
+            "age" : 22,
+            "name" : "Myles Sheppard",
+            "salary" : 83000,
+            "address" : "88 Lakeshore Drive Champlin, MN 55316"
+         },
+         {
+            "age" : 50,
+            "name" : "Alivia Roach",
+            "salary" : 53000,
+            "address" : "468 Country Avenue Lewiston, ME 04240"
+         }
+      ]
+   },
+   {
+      "id" : 7,
+      "name" : "Sales",
+      "employees" : [
+         {
+            "age" : 35,
+            "name" : "Madalynn Camacho",
+            "salary" : 33000,
+            "address" : "12 South Center Ave. Everett, MA 02149"
+         },
+         {
+            "age" : 33,
+            "name" : "Campbell Evans",
+            "salary" : 50000,
+            "address" : "538 King Drive Saint Petersburg, FL 33702"
+         },
+         {
+            "age" : 42,
+            "name" : "Laci Flores",
+            "salary" : 48000,
+            "address" : "7667 Birchpond Street Prior Lake, MN 55372"
+         },
+         {
+            "age" : 31,
+            "name" : "Zain Hinton",
+            "salary" : 54000,
+            "address" : "9517 Jennings Rd. Pearl, MS 39208"
+         }
+      ]
+   }
+]
+

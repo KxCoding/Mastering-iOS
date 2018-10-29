@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Basics'/>
+        <page name='Comparisons'/>
+        <page name='String Comparisons'/>
+        <page name='Compound Predicates'/>
+        <page name='Aggregate Operations'/>
+        <page name='Variables'/>
+        <page name='Subquery'/>
+    </pages>
+</playground>

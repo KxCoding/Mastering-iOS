@@ -1,0 +1,35 @@
+[
+   {
+      "id" : 1,
+      "name" : "Management"
+   },
+   {
+      "id" : 2,
+      "name" : "Design"
+   },
+   {
+      "id" : 3,
+      "name" : "Development"
+   },
+   {
+      "id" : 4,
+      "name" : "HR"
+   },
+   {
+      "id" : 5,
+      "name" : "Planning"
+   },
+   {
+      "id" : 6,
+      "name" : "Finance"
+   },
+   {
+      "id" : 7,
+      "name" : "Sales"
+   },
+   {
+      "id" : 8,
+      "name" : "Public Relations"
+   },
+]
+
