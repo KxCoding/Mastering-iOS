@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gQH-Cr-hFq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reachability-->
+        <scene sceneID="RZO-Sr-lEQ">
+            <objects>
+                <viewController id="gQH-Cr-hFq" customClass="ReachabilityViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCr-kD-Mkd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="1Lq-Ev-6fs">
+                                <rect key="frame" x="30" y="223.5" width="315" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="7UX-FQ-2Ny">
+                                        <rect key="frame" x="76.5" y="0.0" width="162" height="64"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-off" translatesAutoresizingMaskIntoConstraints="NO" id="0tX-of-qHX">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="AI6-ig-Efh"/>
+                                                    <constraint firstAttribute="width" constant="64" id="tg7-8t-HXZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi-off" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-AG-MAI">
+                                                <rect key="frame" x="98" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="P6U-FA-Bix"/>
+                                                    <constraint firstAttribute="height" constant="64" id="WCY-ia-0sq"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="o4p-Lp-VXo">
+                                        <rect key="frame" x="80.5" y="139" width="154.5" height="81"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MB / 0MB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-Uv-pIt">
+                                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4je-C9-b87">
+                                                <rect key="frame" x="0.0" y="51" width="154.5" height="30"/>
+                                                <state key="normal" title="Donwload"/>
+                                                <connections>
+                                                    <action selector="startDownload:" destination="gQH-Cr-hFq" eventType="touchUpInside" id="Raa-8V-0p0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Lq-Ev-6fs" firstAttribute="leading" secondItem="v08-BY-YmC" secondAttribute="leading" constant="30" id="EWX-fz-keK"/>
+                            <constraint firstItem="1Lq-Ev-6fs" firstAttribute="centerY" secondItem="LCr-kD-Mkd" secondAttribute="centerY" id="EmT-er-4cX"/>
+                            <constraint firstItem="v08-BY-YmC" firstAttribute="trailing" secondItem="1Lq-Ev-6fs" secondAttribute="trailing" constant="30" id="WOi-el-71F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v08-BY-YmC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reachability" id="o5o-Vn-f2p"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cellularImageView" destination="0tX-of-qHX" id="iaA-Bl-YTa"/>
+                        <outlet property="sizeLabel" destination="OwV-Uv-pIt" id="4cG-yN-b4a"/>
+                        <outlet property="wifiImageView" destination="Xqk-AG-MAI" id="iRL-cc-wtO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dow-IA-4lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.8000000000002" y="493.40329835082463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cell-off" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="wifi-off" width="102.40000152587891" height="102.40000152587891"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pBl-sY-wUV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--POST Reqeust-->
+        <scene sceneID="RMl-UW-yMB">
+            <objects>
+                <viewController id="pBl-sY-wUV" customClass="PostReqeustViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxO-lI-4pe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pa1-2F-ha4">
+                                <rect key="frame" x="30" y="94" width="315" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTD-yJ-GTt">
+                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="80"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-Wv-8pI">
+                                        <rect key="frame" x="167.5" y="0.0" width="147.5" height="80"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kjh-zn-pwv"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-bf-WDl">
+                                <rect key="frame" x="30" y="215" width="315" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OZV-T4-RRT"/>
+                                </constraints>
+                                <state key="normal" title="Send POST Request"/>
+                                <connections>
+                                    <action selector="sendPostRequest:" destination="pBl-sY-wUV" eventType="touchUpInside" id="c5q-OQ-BNK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ze1-bf-WDl" firstAttribute="leading" secondItem="8j8-N0-4mu" secondAttribute="leading" constant="30" id="8du-pp-Et3"/>
+                            <constraint firstItem="Ze1-bf-WDl" firstAttribute="top" secondItem="pa1-2F-ha4" secondAttribute="bottom" constant="41" id="ChX-VM-M4V"/>
+                            <constraint firstItem="pa1-2F-ha4" firstAttribute="top" secondItem="8j8-N0-4mu" secondAttribute="top" constant="30" id="MjE-VD-gAF"/>
+                            <constraint firstItem="pa1-2F-ha4" firstAttribute="leading" secondItem="8j8-N0-4mu" secondAttribute="leading" constant="30" id="a3e-zU-INQ"/>
+                            <constraint firstItem="8j8-N0-4mu" firstAttribute="trailing" secondItem="pa1-2F-ha4" secondAttribute="trailing" constant="30" id="bdf-wy-aEx"/>
+                            <constraint firstItem="8j8-N0-4mu" firstAttribute="trailing" secondItem="Ze1-bf-WDl" secondAttribute="trailing" constant="30" id="wnF-al-z3K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8j8-N0-4mu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="POST Reqeust" id="WZI-rI-Lgv"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="leftField" destination="tTD-yJ-GTt" id="k14-hN-Aa4"/>
+                        <outlet property="rightField" destination="Ghd-Wv-8pI" id="D4d-zQ-ZUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8S7-iD-9Rl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408.8000000000002" y="-64.31784107946028"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lx7-Qz-DEC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task Scheduling-->
+        <scene sceneID="pXE-1v-2wf">
+            <objects>
+                <viewController id="Lx7-Qz-DEC" customClass="TaskSchedulingViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bux-4I-gvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="ABE-d3-rbk">
+                                <rect key="frame" x="30" y="260.5" width="315" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve3-5U-bZ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.1450980392" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-Hr-dyz">
+                                        <rect key="frame" x="0.0" y="116" width="315" height="30"/>
+                                        <state key="normal" title="Download"/>
+                                        <connections>
+                                            <action selector="startDownload:" destination="Lx7-Qz-DEC" eventType="touchUpInside" id="5BE-NX-SlV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ABE-d3-rbk" firstAttribute="leading" secondItem="SZF-6t-0EC" secondAttribute="leading" constant="30" id="F8E-1f-8WR"/>
+                            <constraint firstItem="SZF-6t-0EC" firstAttribute="trailing" secondItem="ABE-d3-rbk" secondAttribute="trailing" constant="30" id="IDq-16-DdB"/>
+                            <constraint firstItem="ABE-d3-rbk" firstAttribute="centerY" secondItem="bux-4I-gvc" secondAttribute="centerY" id="JcH-uz-v0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SZF-6t-0EC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Task Scheduling" id="NDx-4h-sOt"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sizeLabel" destination="ve3-5U-bZ2" id="vZv-hi-iwv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7e-tN-M5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718" y="557"/>
+        </scene>
+    </scenes>
+</document>

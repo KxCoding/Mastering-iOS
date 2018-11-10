@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "b2497ff0-c3ed-40c9-8cde-1db9cc236ff1",
+		"name": "MasteringiOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/books",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/books/3",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "String Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/string",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"string"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/number",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"a\": 12,\n\t\"b\": 34,\n\t\"op\": \"+\"\n}"
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/calc",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"calc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/cache",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NO Cache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://kxcoding-study.azurewebsites.net/api/cache/nocache",
+					"protocol": "https",
+					"host": [
+						"kxcoding-study",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"cache",
+						"nocache"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

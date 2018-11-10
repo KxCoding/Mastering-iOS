@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UVK-13-Yg6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Session Configuration-->
+        <scene sceneID="0cW-s8-ocq">
+            <objects>
+                <viewController id="UVK-13-Yg6" customClass="SessionConfigurationViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVH-n0-iUi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="phD-gv-w0Q">
+                                <rect key="frame" x="73.5" y="163.5" width="228" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-lf-9O1">
+                                        <rect key="frame" x="21.5" y="0.0" width="185" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Shared Configuration"/>
+                                        <connections>
+                                            <action selector="useSharedConfiguration:" destination="UVK-13-Yg6" eventType="touchUpInside" id="sWw-4Z-Y1i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-bS-9q7">
+                                        <rect key="frame" x="21" y="76" width="186" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Default Configuration"/>
+                                        <connections>
+                                            <action selector="useDefaultConfiguration:" destination="UVK-13-Yg6" eventType="touchUpInside" id="h0U-GC-Y4Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmK-al-8Pl">
+                                        <rect key="frame" x="6" y="152" width="216" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Ephemeral Configuration"/>
+                                        <connections>
+                                            <action selector="useEphemeralConfiguration:" destination="UVK-13-Yg6" eventType="touchUpInside" id="dOB-vF-46t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQm-YE-8Uv">
+                                        <rect key="frame" x="0.0" y="228" width="228" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Background Configuration"/>
+                                        <connections>
+                                            <action selector="useBackgroundConfiguration:" destination="UVK-13-Yg6" eventType="touchUpInside" id="KgU-cg-GQr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ST1-Oh-TV0">
+                                        <rect key="frame" x="18" y="304" width="192" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Custom Configuration"/>
+                                        <connections>
+                                            <action selector="useCustomConfiguration:" destination="UVK-13-Yg6" eventType="touchUpInside" id="7i5-tz-Z8V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="phD-gv-w0Q" firstAttribute="centerY" secondItem="NVH-n0-iUi" secondAttribute="centerY" id="Ksc-Fy-61F"/>
+                            <constraint firstItem="phD-gv-w0Q" firstAttribute="centerX" secondItem="NVH-n0-iUi" secondAttribute="centerX" id="VpZ-fa-Mlc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dAz-3N-22Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Session Configuration" id="8C3-tr-M9j"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YB-El-8ng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="43"/>
+        </scene>
+    </scenes>
+</document>

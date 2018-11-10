@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' executeOnSourceChanges='false'>
+    <pages>
+        <page name='JSON Encoding'/>
+        <page name='Key Encoding Strategy'/>
+        <page name='Date Encoding Strategy'/>
+        <page name='JSON Decoding'/>
+        <page name='Key Decoding Strategy'/>
+        <page name='Date Decoding Strategy'/>
+        <page name='Custom Key Mapping'/>
+        <page name='Custom Encoding'/>
+        <page name='Custom Decoding'/>
+    </pages>
+</playground>

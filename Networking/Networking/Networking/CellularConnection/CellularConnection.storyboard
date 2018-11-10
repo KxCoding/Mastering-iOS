@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qhQ-k2-SuH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cellular Connection-->
+        <scene sceneID="9Cp-22-Vpf">
+            <objects>
+                <viewController id="qhQ-k2-SuH" customClass="CellularConnectionViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRZ-8l-uEr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="iaC-eU-zyL">
+                                <rect key="frame" x="30" y="146.5" width="315" height="374.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XW9-bn-eYc">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="210"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XW9-bn-eYc" secondAttribute="height" multiplier="6:4" id="7pI-yz-D2H"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hxn-Jp-NQI">
+                                        <rect key="frame" x="0.0" y="253" width="315" height="121.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allows Cellular Access" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twA-CX-ZEc">
+                                                <rect key="frame" x="72.5" y="0.0" width="170.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w8U-Oq-xr8">
+                                                <rect key="frame" x="133" y="40.5" width="51" height="31"/>
+                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVz-DY-kw2">
+                                                <rect key="frame" x="100.5" y="91.5" width="114" height="30"/>
+                                                <state key="normal" title="Download Image"/>
+                                                <connections>
+                                                    <action selector="downloadImage:" destination="qhQ-k2-SuH" eventType="touchUpInside" id="M9f-3b-xYf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iaC-eU-zyL" firstAttribute="centerY" secondItem="TRZ-8l-uEr" secondAttribute="centerY" id="BHm-Sz-TQx"/>
+                            <constraint firstItem="Pfi-jf-YAC" firstAttribute="trailing" secondItem="iaC-eU-zyL" secondAttribute="trailing" constant="30" id="LWY-cX-YLs"/>
+                            <constraint firstItem="iaC-eU-zyL" firstAttribute="leading" secondItem="Pfi-jf-YAC" secondAttribute="leading" constant="30" id="Q6j-E8-fFu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pfi-jf-YAC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cellular Connection" id="fWz-eh-yIL"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cellularSwitch" destination="w8U-Oq-xr8" id="PSH-YH-7wl"/>
+                        <outlet property="imageView" destination="XW9-bn-eYc" id="VTl-Bf-Grs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBs-J5-jU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="470"/>
+        </scene>
+    </scenes>
+</document>
