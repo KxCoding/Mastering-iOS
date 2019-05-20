@@ -22,6 +22,11 @@
 
 import UIKit
 
+struct CodableLanguage {
+   let name: String
+   let version: Double
+   let logo: Data
+}
 
 
 class CodableViewController: UIViewController {
@@ -32,14 +37,44 @@ class CodableViewController: UIViewController {
    
    @IBOutlet weak var versionLabel: UILabel!
    
+   let fileUrl: URL = {
+      let documentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+      return documentsDirectory.appendingPathComponent("ios").appendingPathExtension("data")
+   }()
    
    @IBAction func encodeObject(_ sender: Any) {
-      
+      do {
+         guard let url = Bundle.main.url(forResource: "ioslogo", withExtension: "png") else {
+            return
+         }
+         
+         let data = try Data(contentsOf: url)
+         
+         let obj = CodableLanguage(name: "iOS", version: 12.0, logo: data)
+         
+         
+      } catch {
+         print(error)
+      }
    }
    
    
    @IBAction func decodeObject(_ sender: Any) {
-      
+      do {
+         let data = try Data(contentsOf: fileUrl)
+         
+         var language: CodableLanguage?
+         
+         
+         
+         if let language = language {
+            self.imageView.image = UIImage(data: language.logo)
+            self.nameLabel.text = language.name
+            self.versionLabel.text = "\(language.version)"
+         }
+      } catch {
+         print(error)
+      }
    }
    
    

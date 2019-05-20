@@ -22,6 +22,18 @@
 
 import UIKit
 
+class Language {
+   let name: String
+   let version: Double
+   let logo: UIImage
+   
+   init(name: String, version: Double, logo: UIImage) {
+      self.name = name
+      self.version = version
+      self.logo = logo
+   }
+}
+
 
 class NSCodingViewController: UIViewController {
    
@@ -31,6 +43,10 @@ class NSCodingViewController: UIViewController {
    
    @IBOutlet weak var versionLabel: UILabel!
    
+   let fileUrl: URL = {
+      let documentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+      return documentsDirectory.appendingPathComponent("swift").appendingPathExtension("data")
+   }()
    
    
    @IBAction func encodeObject(_ sender: Any) {
@@ -39,13 +55,6 @@ class NSCodingViewController: UIViewController {
    
    
    @IBAction func decodeObject(_ sender: Any) {
-      
-   }
-   
-   
-   override func viewDidLoad() {
-      super.viewDidLoad()
-      
       
    }
 }
