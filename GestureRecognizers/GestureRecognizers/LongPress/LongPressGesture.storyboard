@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LWW-Me-h9Z">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Long Press Gesture-->
+        <scene sceneID="QdK-DI-Vrw">
+            <objects>
+                <viewController id="LWW-Me-h9Z" customClass="LongPressGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tbv-rn-5rR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="6AZ-5H-aA0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vI8-RS-beN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AJy-qb-bJP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <gestureRecognizers/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6AZ-5H-aA0" firstAttribute="top" secondItem="Tbv-rn-5rR" secondAttribute="top" id="3ti-43-eJy"/>
+                            <constraint firstAttribute="bottom" secondItem="6AZ-5H-aA0" secondAttribute="bottom" id="8Ax-Wp-p2K"/>
+                            <constraint firstItem="6AZ-5H-aA0" firstAttribute="leading" secondItem="rVp-jt-yC7" secondAttribute="leading" id="8Hw-sg-oT5"/>
+                            <constraint firstItem="vI8-RS-beN" firstAttribute="trailing" secondItem="rVp-jt-yC7" secondAttribute="trailing" id="AGA-kY-Lbo"/>
+                            <constraint firstAttribute="bottom" secondItem="vI8-RS-beN" secondAttribute="bottom" id="dfq-zs-wB0"/>
+                            <constraint firstItem="vI8-RS-beN" firstAttribute="top" secondItem="Tbv-rn-5rR" secondAttribute="top" id="hu8-Nu-GNX"/>
+                            <constraint firstItem="6AZ-5H-aA0" firstAttribute="trailing" secondItem="rVp-jt-yC7" secondAttribute="trailing" id="lKw-6J-cm9"/>
+                            <constraint firstItem="vI8-RS-beN" firstAttribute="leading" secondItem="rVp-jt-yC7" secondAttribute="leading" id="lTb-nF-lW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rVp-jt-yC7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Long Press Gesture" id="vpE-dA-0rg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="blurView" destination="vI8-RS-beN" id="uiR-ND-U4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HED-Na-RCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5652173913045" y="367.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic" width="1306" height="1632.3333740234375"/>
+    </resources>
+</document>

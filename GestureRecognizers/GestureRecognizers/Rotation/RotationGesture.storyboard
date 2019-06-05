@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYq-Me-lLc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rotation Gesture-->
+        <scene sceneID="YEJ-Pl-LTU">
+            <objects>
+                <viewController id="dYq-Me-lLc" customClass="RotationGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9lS-zo-yNs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="Gj5-Fl-MR3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gj5-Fl-MR3" firstAttribute="top" secondItem="9lS-zo-yNs" secondAttribute="top" id="LXC-Cq-rXg"/>
+                            <constraint firstItem="Gj5-Fl-MR3" firstAttribute="trailing" secondItem="5dj-xd-RR5" secondAttribute="trailing" id="THA-GN-rao"/>
+                            <constraint firstItem="Gj5-Fl-MR3" firstAttribute="leading" secondItem="5dj-xd-RR5" secondAttribute="leading" id="iSF-Ws-93A"/>
+                            <constraint firstAttribute="bottom" secondItem="Gj5-Fl-MR3" secondAttribute="bottom" id="z0n-V9-qBr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5dj-xd-RR5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rotation Gesture" id="xeP-Gn-f9e">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="3hh-qX-rKv">
+                            <connections>
+                                <action selector="reset:" destination="dYq-Me-lLc" id="3Gk-3a-Dcp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Gj5-Fl-MR3" id="Ghz-YG-OAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NP-XA-yIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="198.88392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic" width="1306" height="1632.3333740234375"/>
+    </resources>
+</document>

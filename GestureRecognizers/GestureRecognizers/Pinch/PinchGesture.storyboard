@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3L-WD-XNP">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pinch Gesture-->
+        <scene sceneID="Jio-oq-lUQ">
+            <objects>
+                <viewController id="K3L-WD-XNP" customClass="PinchGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1D4-nH-qaX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-Zq-WoU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l7n-Zq-WoU" firstAttribute="leading" secondItem="qcz-In-2km" secondAttribute="leading" id="K7H-17-K9o"/>
+                            <constraint firstItem="l7n-Zq-WoU" firstAttribute="trailing" secondItem="qcz-In-2km" secondAttribute="trailing" id="b4s-MN-Laf"/>
+                            <constraint firstAttribute="bottom" secondItem="l7n-Zq-WoU" secondAttribute="bottom" id="pPK-HQ-dVT"/>
+                            <constraint firstItem="l7n-Zq-WoU" firstAttribute="top" secondItem="1D4-nH-qaX" secondAttribute="top" id="zwM-qa-gBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qcz-In-2km"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pinch Gesture" id="uc6-a6-sFP">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="E6L-Bv-3XM">
+                            <connections>
+                                <action selector="reset:" destination="K3L-WD-XNP" id="wOK-Ew-HnH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="l7n-Zq-WoU" id="WVC-cv-4j6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGo-Tz-0Gn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="217.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pic" width="1306" height="1632.3333740234375"/>
+    </resources>
+</document>

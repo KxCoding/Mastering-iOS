@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kht-Uv-wkp">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Gesture-->
+        <scene sceneID="PvI-cG-Siw">
+            <objects>
+                <viewController id="kht-Uv-wkp" customClass="SwipeGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PZR-xP-B18">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbd-Ac-18M">
+                                <rect key="frame" x="107" y="390" width="200" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Yer-0b-VZT"/>
+                                    <constraint firstAttribute="height" constant="116" id="kTw-tb-XMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Show Modal"/>
+                                <connections>
+                                    <segue destination="WCX-1X-p3U" kind="presentation" id="Co2-sM-jOP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fbd-Ac-18M" firstAttribute="centerY" secondItem="PZR-xP-B18" secondAttribute="centerY" id="1oh-LW-hdu"/>
+                            <constraint firstItem="fbd-Ac-18M" firstAttribute="centerX" secondItem="PZR-xP-B18" secondAttribute="centerX" id="x7v-3f-ZAJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xPv-Mg-Iag"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swipe Gesture" id="nLG-g9-adk"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wq-6b-Brv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879.7101449275365" y="253.79464285714283"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="6zs-n5-Ba2">
+            <objects>
+                <viewController id="WCX-1X-p3U" customClass="ModalViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KC5-ZE-aCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close ME!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anp-Ma-Wdz">
+                                <rect key="frame" x="120" y="424" width="174" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Anp-Ma-Wdz" firstAttribute="centerY" secondItem="KC5-ZE-aCy" secondAttribute="centerY" id="JZL-06-GF2"/>
+                            <constraint firstItem="Anp-Ma-Wdz" firstAttribute="centerX" secondItem="KC5-ZE-aCy" secondAttribute="centerX" id="Ncc-gk-bEF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0FL-67-ryc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umc-dI-dpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2590" y="252"/>
+        </scene>
+    </scenes>
+</document>

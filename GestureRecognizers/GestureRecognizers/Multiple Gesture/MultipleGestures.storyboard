@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V9K-yi-EoB">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multiple Gestures-->
+        <scene sceneID="yaA-sS-D7N">
+            <objects>
+                <viewController id="V9K-yi-EoB" customClass="MultipleGesturesViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4qo-tT-kSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOd-yf-zu9">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jNP-iu-Pic"/>
+                                    <constraint firstAttribute="width" constant="100" id="kSP-uT-SUL"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vB0-tB-wPI" appends="YES" id="Hgo-Sj-icE"/>
+                                    <outletCollection property="gestureRecognizers" destination="oKv-sF-VdW" appends="YES" id="kHj-ju-Dy7"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OOd-yf-zu9" firstAttribute="centerX" secondItem="4qo-tT-kSQ" secondAttribute="centerX" id="XoL-lh-jUy"/>
+                            <constraint firstItem="OOd-yf-zu9" firstAttribute="centerY" secondItem="4qo-tT-kSQ" secondAttribute="centerY" id="anO-9c-myW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zlU-8E-0wk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Multiple Gestures" id="95r-cD-4ac"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="pinchGesture" destination="vB0-tB-wPI" id="haM-ar-PyB"/>
+                        <outlet property="rotationGesture" destination="oKv-sF-VdW" id="Kcw-sS-5M3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7Y-vy-OD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="vB0-tB-wPI">
+                    <connections>
+                        <action selector="handlePinchGesture:" destination="V9K-yi-EoB" id="QS4-ul-e5b"/>
+                        <outlet property="delegate" destination="V9K-yi-EoB" id="I3M-rl-NY8"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="oKv-sF-VdW">
+                    <connections>
+                        <action selector="handleRotationGesture:" destination="V9K-yi-EoB" id="GpT-cC-GYz"/>
+                        <outlet property="delegate" destination="V9K-yi-EoB" id="yw3-rc-dqT"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1881" y="424"/>
+        </scene>
+    </scenes>
+</document>
