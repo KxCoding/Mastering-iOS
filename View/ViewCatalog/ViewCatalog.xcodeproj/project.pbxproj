@@ -30,6 +30,7 @@
 		AA33D57920A0D15300C8E67E /* StackViewDistributionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57820A0D15300C8E67E /* StackViewDistributionViewController.swift */; };
 		AA33D57B20A0D16C00C8E67E /* StackViewSpacingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57A20A0D16C00C8E67E /* StackViewSpacingViewController.swift */; };
 		AA33D57D20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33D57C20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift */; };
+		AA393D1A2353660D0052422B /* DatePickerModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA393D192353660D0052422B /* DatePickerModeViewController.swift */; };
 		AA40384520832D040075AE42 /* TextViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA40384320832D040075AE42 /* TextViews.storyboard */; };
 		AA403848208378F20075AE42 /* PlainTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA403847208378F20075AE42 /* PlainTextViewController.swift */; };
 		AA40384A2083B6370075AE42 /* MultilineLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4038492083B6370075AE42 /* MultilineLabelViewController.swift */; };
@@ -91,6 +92,7 @@
 		AA33D57820A0D15300C8E67E /* StackViewDistributionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDistributionViewController.swift; sourceTree = "<group>"; };
 		AA33D57A20A0D16C00C8E67E /* StackViewSpacingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSpacingViewController.swift; sourceTree = "<group>"; };
 		AA33D57C20A0D18F00C8E67E /* StackViewArrangedSubviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewArrangedSubviewsViewController.swift; sourceTree = "<group>"; };
+		AA393D192353660D0052422B /* DatePickerModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerModeViewController.swift; sourceTree = "<group>"; };
 		AA40384420832D040075AE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ViewCatalog/Base.lproj/TextViews.storyboard; sourceTree = "<group>"; };
 		AA403847208378F20075AE42 /* PlainTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextViewController.swift; sourceTree = "<group>"; };
 		AA4038492083B6370075AE42 /* MultilineLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineLabelViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 			path = StackView;
 			sourceTree = "<group>";
 		};
+		AA393D18235365E80052422B /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				AA393D192353660D0052422B /* DatePickerModeViewController.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		AA403842208329F40075AE42 /* SystemViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +341,7 @@
 		AA7FAB0920846CB800E0F0B0 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				AA393D18235365E80052422B /* DatePicker */,
 				AAEA0C2120986338002FF765 /* Stepper */,
 				AAEA0C1C2097F57B002FF765 /* SegmentedControl */,
 				AAF76C842096D8BB008435E4 /* PageControl */,
@@ -496,6 +507,7 @@
 				AAB5147A20AE2A9100403887 /* FirstResponderViewController.swift in Sources */,
 				AA312A5420ABC59100AAF80D /* DataDetectionViewController.swift in Sources */,
 				AA312A5620ABCBB600AAF80D /* ImageAttachmentViewController.swift in Sources */,
+				AA393D1A2353660D0052422B /* DatePickerModeViewController.swift in Sources */,
 				AAEA0C1E2097F75B002FF765 /* SegmentedControlViewController.swift in Sources */,
 				AA33D56F20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift in Sources */,
 				AA312A5020AB9F9000AAF80D /* TextViewViewController.swift in Sources */,
