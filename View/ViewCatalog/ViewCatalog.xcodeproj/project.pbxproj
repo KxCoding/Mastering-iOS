@@ -41,6 +41,7 @@
 		AA4D3B2C20822B4700CC9F81 /* InteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D3B2B20822B4700CC9F81 /* InteractionViewController.swift */; };
 		AA4D3B4C20826EB800CC9F81 /* HiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D3B4B20826EB800CC9F81 /* HiddenViewController.swift */; };
 		AA4D3B4E2082728E00CC9F81 /* ClippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D3B4D2082728E00CC9F81 /* ClippingViewController.swift */; };
+		AA5200C823582B71004048BF /* CountDownTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5200C723582B71004048BF /* CountDownTimerViewController.swift */; };
 		AA5D3C8E20AD561700EA32EB /* CapitalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D3C8D20AD561700EA32EB /* CapitalizationViewController.swift */; };
 		AA5D3C9020AD59AF00EA32EB /* CorrectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D3C8F20AD59AF00EA32EB /* CorrectionViewController.swift */; };
 		AA5D3C9820AD5F8800EA32EB /* SpellCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D3C9720AD5F8800EA32EB /* SpellCheckingViewController.swift */; };
@@ -103,6 +104,7 @@
 		AA4D3B2B20822B4700CC9F81 /* InteractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionViewController.swift; sourceTree = "<group>"; };
 		AA4D3B4B20826EB800CC9F81 /* HiddenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenViewController.swift; sourceTree = "<group>"; };
 		AA4D3B4D2082728E00CC9F81 /* ClippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingViewController.swift; sourceTree = "<group>"; };
+		AA5200C723582B71004048BF /* CountDownTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerViewController.swift; sourceTree = "<group>"; };
 		AA5D3C8D20AD561700EA32EB /* CapitalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalizationViewController.swift; sourceTree = "<group>"; };
 		AA5D3C8F20AD59AF00EA32EB /* CorrectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectionViewController.swift; sourceTree = "<group>"; };
 		AA5D3C9720AD5F8800EA32EB /* SpellCheckingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCheckingViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				AA393D192353660D0052422B /* DatePickerModeViewController.swift */,
+				AA5200C723582B71004048BF /* CountDownTimerViewController.swift */,
 			);
 			path = DatePicker;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				AA393D1A2353660D0052422B /* DatePickerModeViewController.swift in Sources */,
 				AAEA0C1E2097F75B002FF765 /* SegmentedControlViewController.swift in Sources */,
 				AA33D56F20A075BF00C8E67E /* ActivityIndicatorViewViewController.swift in Sources */,
+				AA5200C823582B71004048BF /* CountDownTimerViewController.swift in Sources */,
 				AA312A5020AB9F9000AAF80D /* TextViewViewController.swift in Sources */,
 				AA4D3B2A20821A3600CC9F81 /* TagViewController.swift in Sources */,
 				AA1F677720997CE600C344BD /* ImageAnimationViewController.swift in Sources */,
