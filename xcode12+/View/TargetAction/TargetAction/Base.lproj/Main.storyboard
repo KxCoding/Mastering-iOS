@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="So8-jk-Vda">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Code-->
+        <scene sceneID="fNK-ag-eMV">
+            <objects>
+                <viewController id="ZMn-2t-k3N" customClass="CodeViewController" customModule="TargetAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ak7-rI-yoB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJD-3d-E5I">
+                                <rect key="frame" x="16" y="194" width="358" height="86"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.63137254899999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="t1t-x5-Nbs"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-vA-Zmd">
+                                <rect key="frame" x="16" y="363" width="360" height="31"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PMd-UG-dUp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BJD-3d-E5I" firstAttribute="leading" secondItem="PMd-UG-dUp" secondAttribute="leading" constant="16" id="JCA-v2-DHJ"/>
+                            <constraint firstItem="PMd-UG-dUp" firstAttribute="trailing" secondItem="BJD-3d-E5I" secondAttribute="trailing" constant="16" id="LMx-If-hZQ"/>
+                            <constraint firstItem="BJD-3d-E5I" firstAttribute="top" secondItem="PMd-UG-dUp" secondAttribute="top" constant="54" id="Pid-l1-hkV"/>
+                            <constraint firstItem="e3d-vA-Zmd" firstAttribute="leading" secondItem="PMd-UG-dUp" secondAttribute="leading" constant="18" id="iLd-BG-aI6"/>
+                            <constraint firstItem="PMd-UG-dUp" firstAttribute="trailing" secondItem="e3d-vA-Zmd" secondAttribute="trailing" constant="16" id="vZz-6m-Z8m"/>
+                            <constraint firstItem="e3d-vA-Zmd" firstAttribute="top" secondItem="BJD-3d-E5I" secondAttribute="bottom" constant="83" id="wFx-p3-ZJQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Code" id="ngy-95-P5e"/>
+                    <connections>
+                        <outlet property="btn" destination="BJD-3d-E5I" id="8mf-xX-PkA"/>
+                        <outlet property="slider" destination="e3d-vA-Zmd" id="vyz-31-gZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngc-1h-ohL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.8" y="455.62218890554726"/>
+        </scene>
+        <!--Interface Builder-->
+        <scene sceneID="pjC-Uo-Z1l">
+            <objects>
+                <viewController id="dxE-hl-1eF" customClass="IBViewController" customModule="TargetAction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijm-9B-Hs5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j73-rO-Mgh">
+                                <rect key="frame" x="16" y="180" width="358" height="86"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.63137254899999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="ZCL-pH-ZGh"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-nl-FVB">
+                                <rect key="frame" x="16" y="349" width="360" height="31"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P7h-9v-6E0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cgb-nl-FVB" firstAttribute="top" secondItem="j73-rO-Mgh" secondAttribute="bottom" constant="83" id="6tB-cx-6mx"/>
+                            <constraint firstItem="j73-rO-Mgh" firstAttribute="top" secondItem="P7h-9v-6E0" secondAttribute="top" constant="40" id="891-rt-BPr"/>
+                            <constraint firstItem="P7h-9v-6E0" firstAttribute="trailing" secondItem="cgb-nl-FVB" secondAttribute="trailing" constant="16" id="IUi-WB-38N"/>
+                            <constraint firstItem="cgb-nl-FVB" firstAttribute="leading" secondItem="P7h-9v-6E0" secondAttribute="leading" constant="18" id="WRn-1m-bHz"/>
+                            <constraint firstItem="P7h-9v-6E0" firstAttribute="trailing" secondItem="j73-rO-Mgh" secondAttribute="trailing" constant="16" id="dcX-Yh-j0M"/>
+                            <constraint firstItem="j73-rO-Mgh" firstAttribute="leading" secondItem="P7h-9v-6E0" secondAttribute="leading" constant="16" id="jtp-sP-ThL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interface Builder" id="TfI-rX-ejK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHG-gP-QEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.8" y="-209.14542728635683"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vxI-ca-2bc">
+            <objects>
+                <tabBarController id="So8-jk-Vda" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kV7-vI-y62">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3NM-ud-APA" kind="relationship" relationship="viewControllers" id="Uop-fm-Mgu"/>
+                        <segue destination="hNV-23-A3p" kind="relationship" relationship="viewControllers" id="7lG-6Y-oFn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3u-gL-kWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="124"/>
+        </scene>
+        <!--Interface Builder-->
+        <scene sceneID="Jbd-LW-c3S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3NM-ud-APA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Interface Builder" image="square.stack.3d.up" catalog="system" id="n4I-Gf-tPr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="acK-HK-MOo">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dxE-hl-1eF" kind="relationship" relationship="rootViewController" id="7pv-sT-A0K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZr-SO-tUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="-209.14542728635683"/>
+        </scene>
+        <!--Code-->
+        <scene sceneID="hau-n2-6B5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hNV-23-A3p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Code" image="curlybraces" catalog="system" id="5WA-BQ-Sih"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="svi-Ph-Yar">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZMn-2t-k3N" kind="relationship" relationship="rootViewController" id="Avz-OT-3sg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvT-aX-sx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="455.62218890554726"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="curlybraces" catalog="system" width="128" height="128"/>
+        <image name="square.stack.3d.up" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
