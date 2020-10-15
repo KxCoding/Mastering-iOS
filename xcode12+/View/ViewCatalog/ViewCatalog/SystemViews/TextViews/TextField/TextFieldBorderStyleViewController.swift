@@ -1,6 +1,5 @@
 //
-//  Mastering iOS
-//  Copyright (c) KxCoding <help@kxcoding.com>
+//  Copyright (c) 2018 KxCoding <kky0317@gmail.com>
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -20,45 +19,39 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-
 import UIKit
 
-class ComposeViewController: UIViewController {
-    
-    var delegate: ComposeDelegate?
-    
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
-    }
+class TextFieldBorderStyleViewController: UIViewController {
+   
+   @IBOutlet weak var inputField: UITextField!
+   
+   @IBOutlet weak var borderStyleControl: UISegmentedControl!
+   
+   @IBAction func borderStyleChanged(_ sender: UISegmentedControl) {
+      let index = sender.selectedSegmentIndex
+    let style = UITextField.BorderStyle(rawValue: index) ?? .roundedRect
+      inputField.borderStyle = style
+      
+      if style == .roundedRect {
+         print("reset")
+         inputField.background = nil
+         inputField.disabledBackground = nil
+      }
+   }
+   
+   
+   @IBOutlet weak var enabledSwitch: UISwitch!
+   
+   @IBAction func toggleEnabled(_ sender: UISwitch) {
+      inputField.isEnabled = sender.isOn
+   }
+   
+   
+   override func viewDidLoad() {
+      super.viewDidLoad()
+      
+      borderStyleControl.selectedSegmentIndex = inputField.borderStyle.rawValue
+      
+      print(inputField.background)
+   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

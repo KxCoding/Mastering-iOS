@@ -23,42 +23,32 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
-    
-    var delegate: ComposeDelegate?
-    
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+@available(iOS 13.0, *)
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
-    
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    func sceneDidDisconnect(_ scene: UIScene) {
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+    }
+
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        
+    }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+        
+    }
+
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        
+    }
+
+    func sceneDidEnterBackground(_ scene: UIScene) {
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

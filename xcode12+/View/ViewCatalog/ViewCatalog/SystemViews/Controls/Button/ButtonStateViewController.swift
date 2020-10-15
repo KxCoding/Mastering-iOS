@@ -23,42 +23,51 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class ButtonStateViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var stateLabel: UILabel!
     
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var btn: UIButton!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBAction func report(_ sender: UIButton) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            self.stateLabel.text = sender.state.debugString
+        }
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func stateChanged(_ sender: UISegmentedControl) {
+        
     }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        stateLabel.text = btn.state.debugString
     }
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+extension UIControl.State {
+    var debugString: String {
+        var list = [String]()
+        if contains(.normal) {
+            list.append("Normal")
+        }
+        if contains(.highlighted) {
+            list.append("Highlighted")
+        }
+        if contains(.disabled) {
+            list.append("Disabled")
+        }
+        if contains(.selected) {
+            list.append("Selected")
+        }
+        
+        return list.joined(separator: ", ")
+    }
+}

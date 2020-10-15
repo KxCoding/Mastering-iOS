@@ -23,42 +23,26 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class NonContinuousSliderViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var valueLabel1: UILabel!
+    @IBOutlet weak var slider1: UISlider!
     
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var valueLabel2: UILabel!
+    @IBOutlet weak var slider2: UISlider!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    
+    @IBAction func sliderChanged1(_ sender: UISlider) {
+        valueLabel1.text = String(format: "%.1f", sender.value)
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func sliderChanged2(_ sender: UISlider) {
+        valueLabel2.text = String(format: "%.1f", sender.value)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

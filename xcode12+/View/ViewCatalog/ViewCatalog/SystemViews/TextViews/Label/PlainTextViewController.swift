@@ -23,42 +23,51 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class PlainTextViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
     
-    @IBOutlet weak var inputField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBOutlet weak var fontSizeStepper: UIStepper!
+    
+    
+    
+    @IBAction func changeColorToRed(_ sender: Any) {
+        
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func changeColorToBlue(_ sender: Any) {
+        
     }
+    
+    @IBAction func changeColorToBlack(_ sender: Any) {
+        
+    }
+    
+    
+    
+    
+    @IBAction func updateAlignment(_ sender: UISegmentedControl) {
+        let selectedIndex = sender.selectedSegmentIndex
+        
+        
+    }
+    
+    
+    
+    
+    @IBAction func updateFontSize(_ sender: UIStepper) {
+        let newSize = CGFloat(sender.value)
+        
+        
+    }
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        //fontSizeStepper.value = Double(valueLabel.font.pointSize)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

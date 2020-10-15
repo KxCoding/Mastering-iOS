@@ -23,42 +23,20 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class CountDownTimerViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var timeLabel: UILabel!
     
-    @IBOutlet weak var inputField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
+    @IBOutlet weak var picker: UIDatePicker!
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func start(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

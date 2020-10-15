@@ -23,42 +23,25 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class StackViewSpacingViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var redView: UIView!
+    @IBOutlet weak var horizontalStackView: UIStackView!
+    @IBOutlet weak var spacingLabel: UILabel!
+    @IBOutlet weak var spacingSlider: UISlider!
     
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBAction func spacingChanged(_ sender: UISlider) {
+        
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    private func updateLabel() {
+        spacingLabel.text = "\(Int(horizontalStackView.spacing))"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        updateLabel()
+        spacingSlider.value = Float(horizontalStackView.spacing)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

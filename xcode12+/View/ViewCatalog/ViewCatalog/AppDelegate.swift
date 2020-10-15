@@ -23,42 +23,23 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
-    
-    var delegate: ComposeDelegate?
-    
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
     }
-    
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+
+    // MARK: UISceneSession Lifecycle
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    @available(iOS 13.0, *)
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

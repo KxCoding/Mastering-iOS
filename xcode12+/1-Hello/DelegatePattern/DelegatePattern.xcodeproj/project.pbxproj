@@ -16,6 +16,7 @@
 		AA137E1A2528750200C82F61 /* CustomDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137E162528750200C82F61 /* CustomDelegateViewController.swift */; };
 		AA137E1B2528750200C82F61 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137E172528750200C82F61 /* TableViewViewController.swift */; };
 		AA137E1C2528750200C82F61 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137E182528750200C82F61 /* ComposeViewController.swift */; };
+		AAE367B8252EE43C0075E95C /* ComposeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE367B7252EE43C0075E95C /* ComposeDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AA137E162528750200C82F61 /* CustomDelegateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDelegateViewController.swift; sourceTree = "<group>"; };
 		AA137E172528750200C82F61 /* TableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		AA137E182528750200C82F61 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		AAE367B7252EE43C0075E95C /* ComposeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				AA137DFB2528725F00C82F61 /* Assets.xcassets */,
 				AA137DFD2528725F00C82F61 /* LaunchScreen.storyboard */,
 				AA137E002528725F00C82F61 /* Info.plist */,
+				AAE367B7252EE43C0075E95C /* ComposeDelegate.swift */,
 			);
 			path = DelegatePattern;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA137DF32528725F00C82F61 /* AppDelegate.swift in Sources */,
+				AAE367B8252EE43C0075E95C /* ComposeDelegate.swift in Sources */,
 				AA137DF52528725F00C82F61 /* SceneDelegate.swift in Sources */,
 				AA137E1A2528750200C82F61 /* CustomDelegateViewController.swift in Sources */,
 				AA137E1C2528750200C82F61 /* ComposeViewController.swift in Sources */,

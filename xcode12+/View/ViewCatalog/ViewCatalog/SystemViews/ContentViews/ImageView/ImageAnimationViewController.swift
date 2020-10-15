@@ -23,42 +23,21 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class ImageAnimationViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBAction func startAnimation(_ sender: Any) {
+        
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func stopAnimation(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

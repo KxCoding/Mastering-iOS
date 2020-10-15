@@ -20,45 +20,41 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-
 import UIKit
 
-class ComposeViewController: UIViewController {
-    
-    var delegate: ComposeDelegate?
+class TextFieldOverlayViewViewController: UIViewController {
     
     @IBOutlet weak var inputField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @objc func showPredefinedValue() {
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let one = UIAlertAction(title: "One", style: .default) { (action) in
+            self.inputField.text = action.title
+        }
+        sheet.addAction(one)
+        
+        let two = UIAlertAction(title: "Two", style: .default) { (action) in
+            self.inputField.text = action.title
+        }
+        sheet.addAction(two)
+        
+        let three = UIAlertAction(title: "Three", style: .default) { (action) in
+            self.inputField.text = action.title
+        }
+        sheet.addAction(three)
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        sheet.addAction(cancel)
+        
+        present(sheet, animated: true, completion: nil)
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

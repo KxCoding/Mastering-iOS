@@ -23,42 +23,34 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class ReturnKeyViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var firstInputField: UITextField!
     
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var secondInputField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        secondInputField.delegate = self
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+extension ReturnKeyViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let keyword = secondInputField.text else { return true }
+        
+        guard let url = URL(string: "http://www.google.com/m/search?q=\(keyword)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+            return true
+        }
+        
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        
+        return true
+    }
+}
 
 

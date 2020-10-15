@@ -23,41 +23,24 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class ImagePickerViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    lazy var images: [UIImage] = {
+        return (0...6).compactMap { UIImage(named: "slot-machine-\($0)") }
+    }()
     
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var picker: UIPickerView!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func shuffle(_ sender: Any?) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

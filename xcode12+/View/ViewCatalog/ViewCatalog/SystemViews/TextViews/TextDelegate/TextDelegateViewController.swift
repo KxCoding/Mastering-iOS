@@ -23,30 +23,46 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class TextDelegateViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var nameField: UITextField!
     
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
+    @IBOutlet weak var genderField: UITextField!
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
+    @IBOutlet weak var emailField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+extension TextDelegateViewController {
+    func alert(message: String) {
+        let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alert.addAction(ok)
+        
+        present(alert, animated: true, completion: nil)
+    }
+}
+
+
 
 
 

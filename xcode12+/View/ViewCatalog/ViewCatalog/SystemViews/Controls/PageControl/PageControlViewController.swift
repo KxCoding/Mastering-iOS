@@ -23,42 +23,39 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class PageControlViewController: UIViewController {
+    @IBOutlet weak var listCollectionView: UICollectionView!
     
-    var delegate: ComposeDelegate?
     
-    @IBOutlet weak var inputField: UITextField!
     
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
-    }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
-    }
+    let list = [UIColor.red, UIColor.green, UIColor.blue, UIColor.gray, UIColor.black]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
 
 
 
 
+extension PageControlViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = list[indexPath.item]
+        return cell
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
+extension PageControlViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.bounds.size
+    }
+}

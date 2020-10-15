@@ -23,34 +23,36 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class StepperViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var valueStepper: UIStepper!
+    @IBOutlet weak var autorepeatSwitch: UISwitch!
+    @IBOutlet weak var continuousSwitch: UISwitch!
+    @IBOutlet weak var wrapSwitch: UISwitch!
     
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBAction func toggleAutorepeat(_ sender: UISwitch) {
+        
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func toggleContinuous(_ sender: UISwitch) {
+        
     }
+    
+    @IBAction func toggleWrap(_ sender: UISwitch) {
+        
+    }
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
-
-
-
-
 
 
 

@@ -23,42 +23,40 @@
 
 import UIKit
 
-class ComposeViewController: UIViewController {
+class StackViewArrangedSubviewsViewController: UIViewController {
     
-    var delegate: ComposeDelegate?
+    @IBOutlet weak var stackView: UIStackView!
     
-    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func performCancel(_ sender: Any) {
-        delegate?.composerDidCancel(self)
-        dismiss(animated: true, completion: nil)
+    @IBAction func add(_ sender: Any) {
+        
     }
     
-    @IBAction func performDone(_ sender: Any) {
-        delegate?.composer(self, didInput: inputField.text)
-        dismiss(animated: true, completion: nil)
+    @IBAction func insert(_ sender: Any) {
+        
     }
+    
+    @IBAction func remove(_ sender: Any) {
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 13.0, *) {
-            isModalInPresentation = true
-        } 
+        
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+extension StackViewArrangedSubviewsViewController {
+    private func generateView() -> UIView {
+        let v = UIView()
+        
+        let r = CGFloat(arc4random_uniform(256)) / 255
+        let g = CGFloat(arc4random_uniform(256)) / 255
+        let b = CGFloat(arc4random_uniform(256)) / 255
+        v.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        
+        return v
+    }
+}
