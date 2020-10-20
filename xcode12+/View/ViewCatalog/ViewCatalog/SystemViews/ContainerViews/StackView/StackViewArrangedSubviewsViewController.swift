@@ -52,9 +52,9 @@ extension StackViewArrangedSubviewsViewController {
     private func generateView() -> UIView {
         let v = UIView()
         
-        let r = CGFloat(arc4random_uniform(256)) / 255
-        let g = CGFloat(arc4random_uniform(256)) / 255
-        let b = CGFloat(arc4random_uniform(256)) / 255
+        let r = CGFloat.random(in: 0.0 ... 256.0) / 255
+        let g = CGFloat.random(in: 0.0 ... 256.0) / 255
+        let b = CGFloat.random(in: 0.0 ... 256.0) / 255
         v.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
         
         return v

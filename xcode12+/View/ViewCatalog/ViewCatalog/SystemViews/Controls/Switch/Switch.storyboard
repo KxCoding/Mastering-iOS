@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3D4-rR-EJa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switch-->
+        <scene sceneID="GFT-it-yR1">
+            <objects>
+                <viewController title="Switch" id="3D4-rR-EJa" customClass="SwitchViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mx-aJ-Yhv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87u-Dp-l3c">
+                                <rect key="frame" x="182.5" y="559.5" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-b2-cK0">
+                                <rect key="frame" x="16" y="802" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mFw-59-0dI"/>
+                                </constraints>
+                                <state key="normal" title="Toggle"/>
+                                <connections>
+                                    <action selector="toggle:" destination="3D4-rR-EJa" eventType="touchUpInside" id="eww-f9-sE0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb" catalog="system" highlightedImage="lightbulb.fill" translatesAutoresizingMaskIntoConstraints="NO" id="qmR-by-Iew">
+                                <rect key="frame" x="117" y="328" width="180" height="181.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="13t-xD-1qO"/>
+                                    <constraint firstAttribute="width" constant="180" id="CLg-P6-Mib"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TMN-Ni-7sk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="87u-Dp-l3c" firstAttribute="top" secondItem="qmR-by-Iew" secondAttribute="bottom" constant="50" id="MLe-mu-8ru"/>
+                            <constraint firstItem="87u-Dp-l3c" firstAttribute="centerY" secondItem="TMN-Ni-7sk" secondAttribute="centerY" constant="100" id="ezt-pe-jHh"/>
+                            <constraint firstItem="gEy-b2-cK0" firstAttribute="leading" secondItem="TMN-Ni-7sk" secondAttribute="leading" constant="16" id="iIH-A0-g5Z"/>
+                            <constraint firstItem="TMN-Ni-7sk" firstAttribute="bottom" secondItem="gEy-b2-cK0" secondAttribute="bottom" constant="20" id="ip2-9h-qqT"/>
+                            <constraint firstItem="87u-Dp-l3c" firstAttribute="centerX" secondItem="TMN-Ni-7sk" secondAttribute="centerX" id="mRA-nB-kkF"/>
+                            <constraint firstItem="TMN-Ni-7sk" firstAttribute="trailing" secondItem="gEy-b2-cK0" secondAttribute="trailing" constant="16" id="oAw-DM-sTa"/>
+                            <constraint firstItem="qmR-by-Iew" firstAttribute="centerX" secondItem="87u-Dp-l3c" secondAttribute="centerX" id="r1B-6c-Npf"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bulbImageView" destination="qmR-by-Iew" id="gUG-hi-feB"/>
+                        <outlet property="testSwitch" destination="87u-Dp-l3c" id="ano-Sm-e9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FT-qU-QzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="-157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
+        <image name="lightbulb.fill" catalog="system" width="113" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

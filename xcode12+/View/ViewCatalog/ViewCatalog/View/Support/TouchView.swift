@@ -23,28 +23,37 @@
 
 import UIKit
 
-class ImageAnimationViewController: UIViewController {
+class TouchView: UIView {
+    let noteImage = UIImage(systemName: "music.note")?.withTintColor(.systemRed)
     
-    let images = [
-        UIImage(systemName: "speaker")!,
-        UIImage(systemName: "speaker.1")!,
-        UIImage(systemName: "speaker.2")!,
-        UIImage(systemName: "speaker.3")!
-    ]
+    var points = [CGPoint]()
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBAction func startAnimation(_ sender: Any) {
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         
+        for pt in points {
+            noteImage?.draw(in: CGRect(x: pt.x, y: pt.y, width: 64, height: 64))
+        }
     }
     
-    @IBAction func stopAnimation(_ sender: Any) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        for t in touches {
+            let pt = t.location(in: self)
+            
+            points.append(pt.applying(CGAffineTransform(translationX: -32, y: -32)))
+        }
+        
+        setNeedsDisplay()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        points.removeAll()
+        setNeedsDisplay()
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        points.removeAll()
+        setNeedsDisplay()
     }
 }

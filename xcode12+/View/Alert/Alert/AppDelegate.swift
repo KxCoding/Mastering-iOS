@@ -23,28 +23,21 @@
 
 import UIKit
 
-class ImageAnimationViewController: UIViewController {
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let images = [
-        UIImage(systemName: "speaker")!,
-        UIImage(systemName: "speaker.1")!,
-        UIImage(systemName: "speaker.2")!,
-        UIImage(systemName: "speaker.3")!
-    ]
+    var window: UIWindow?
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBAction func startAnimation(_ sender: Any) {
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return true
     }
     
-    @IBAction func stopAnimation(_ sender: Any) {
-        
+    // MARK: UISceneSession Lifecycle
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         
     }
 }

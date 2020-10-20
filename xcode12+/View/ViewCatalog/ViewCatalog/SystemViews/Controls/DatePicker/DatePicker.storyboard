@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8xp-T3-hHl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker Mode-->
+        <scene sceneID="KlO-HP-dvu">
+            <objects>
+                <viewController id="mj9-2t-JPM" customClass="DatePickerModeViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kTf-QK-XZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="K8s-DZ-SLf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Date Picker Mode" id="B6W-ja-BHS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dk-jz-Iyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="461"/>
+        </scene>
+        <!--Count Down Timer-->
+        <scene sceneID="cft-pH-DhV">
+            <objects>
+                <viewController id="3g4-14-Q6f" customClass="CountDownTimerViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G2I-ek-lpH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCK-0y-AsJ">
+                                <rect key="frame" x="0.0" y="314" width="390" height="216"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL2-ia-kfB">
+                                <rect key="frame" x="0.0" y="750" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xNa-iO-O46"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="3g4-14-Q6f" eventType="touchUpInside" id="Rch-Xt-ybA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpu-Dl-sUl">
+                                <rect key="frame" x="170.66666666666666" y="178.66666666666666" width="49" height="95.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mrk-1q-vxw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bCK-0y-AsJ" firstAttribute="leading" secondItem="mrk-1q-vxw" secondAttribute="leading" id="2rS-nc-37h"/>
+                            <constraint firstItem="uL2-ia-kfB" firstAttribute="trailing" secondItem="mrk-1q-vxw" secondAttribute="trailing" id="YyD-Lp-JBj"/>
+                            <constraint firstItem="tpu-Dl-sUl" firstAttribute="centerX" secondItem="G2I-ek-lpH" secondAttribute="centerX" id="axq-2s-Yqb"/>
+                            <constraint firstItem="uL2-ia-kfB" firstAttribute="bottom" secondItem="mrk-1q-vxw" secondAttribute="bottom" id="gV6-il-43Z"/>
+                            <constraint firstItem="bCK-0y-AsJ" firstAttribute="trailing" secondItem="mrk-1q-vxw" secondAttribute="trailing" id="lfh-t3-juM"/>
+                            <constraint firstItem="bCK-0y-AsJ" firstAttribute="centerY" secondItem="G2I-ek-lpH" secondAttribute="centerY" id="sEh-aT-wcE"/>
+                            <constraint firstItem="uL2-ia-kfB" firstAttribute="leading" secondItem="mrk-1q-vxw" secondAttribute="leading" id="sNW-3e-hZ4"/>
+                            <constraint firstItem="bCK-0y-AsJ" firstAttribute="top" secondItem="tpu-Dl-sUl" secondAttribute="bottom" constant="40" id="vaV-oT-dpx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Count Down Timer" id="X8Q-JR-Ymx"/>
+                    <connections>
+                        <outlet property="picker" destination="bCK-0y-AsJ" id="1eW-r0-vYH"/>
+                        <outlet property="timeLabel" destination="tpu-Dl-sUl" id="hVY-RK-fgb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiv-l4-NIf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="451"/>
+        </scene>
+        <!--Date Picker-->
+        <scene sceneID="BkP-jP-Y7Z">
+            <objects>
+                <tableViewController id="8xp-T3-hHl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0ra-6V-Z9x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="ULg-kI-taz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="YkZ-TK-00e" style="IBUITableViewCellStyleDefault" id="QZE-bH-h2l">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QZE-bH-h2l" id="v9W-Pi-Keu">
+                                            <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Date Picker Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="YkZ-TK-00e">
+                                                    <rect key="frame" x="20" y="0.0" width="330.66666666666669" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mj9-2t-JPM" kind="show" id="CiW-OW-RLv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="4AK-YR-wcj" style="IBUITableViewCellStyleDefault" id="elf-4p-Tad">
+                                        <rect key="frame" x="0.0" y="71.5" width="390" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="elf-4p-Tad" id="FMm-eg-NFz">
+                                            <rect key="frame" x="0.0" y="0.0" width="358.66666666666669" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Count Down Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="4AK-YR-wcj">
+                                                    <rect key="frame" x="20" y="0.0" width="330.66666666666669" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3g4-14-Q6f" kind="show" id="KFl-YC-TbC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="8xp-T3-hHl" id="qVs-Cg-w3s"/>
+                            <outlet property="delegate" destination="8xp-T3-hHl" id="BhT-ML-gSz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Date Picker" id="QM6-nn-UUz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGT-5q-4PD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

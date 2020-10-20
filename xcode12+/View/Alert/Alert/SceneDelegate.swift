@@ -23,28 +23,31 @@
 
 import UIKit
 
-class ImageAnimationViewController: UIViewController {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
-    let images = [
-        UIImage(systemName: "speaker")!,
-        UIImage(systemName: "speaker.1")!,
-        UIImage(systemName: "speaker.2")!,
-        UIImage(systemName: "speaker.3")!
-    ]
+    var window: UIWindow?
     
-    @IBOutlet weak var imageView: UIImageView!
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
+    }
     
-    @IBAction func startAnimation(_ sender: Any) {
+    func sceneDidDisconnect(_ scene: UIScene) {
         
     }
     
-    @IBAction func stopAnimation(_ sender: Any) {
+    func sceneDidBecomeActive(_ scene: UIScene) {
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func sceneWillResignActive(_ scene: UIScene) {
         
+    }
+    
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        
+    }
+    
+    func sceneDidEnterBackground(_ scene: UIScene) {
         
     }
 }

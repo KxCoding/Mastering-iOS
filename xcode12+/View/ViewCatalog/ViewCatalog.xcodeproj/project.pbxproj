@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4A1E8F253BD7D000DEB94B /* ProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A1E8E253BD7D000DEB94B /* ProgressView.storyboard */; };
+		AA4A1E92253BF87A00DEB94B /* ActivityIndicatorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A1E91253BF87A00DEB94B /* ActivityIndicatorView.storyboard */; };
+		AA4A1E95253C0CD000DEB94B /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A1E94253C0CD000DEB94B /* ImageView.storyboard */; };
+		AA4A1E99253C0D1500DEB94B /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4A1E98253C0D1500DEB94B /* StackView.storyboard */; };
+		AA6D2F0F253A980100F17211 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6D2F0E253A980100F17211 /* DatePicker.storyboard */; };
+		AA6D2F12253A982300F17211 /* Stepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6D2F11253A982300F17211 /* Stepper.storyboard */; };
+		AA6D2F16253AA0CC00F17211 /* PickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6D2F15253AA0CC00F17211 /* PickerView.storyboard */; };
+		AA91DC9F25398F1E00C63788 /* SegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA91DC9E25398F1E00C63788 /* SegmentedControl.storyboard */; };
 		AA99A4492537FF7100373E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99A4482537FF7100373E4F /* AppDelegate.swift */; };
 		AA99A44B2537FF7100373E4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99A44A2537FF7100373E4F /* SceneDelegate.swift */; };
 		AA99A4502537FF7100373E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A44E2537FF7100373E4F /* Main.storyboard */; };
@@ -71,9 +79,22 @@
 		AA99A4FA2538187A00373E4F /* TextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A4F92538187A00373E4F /* TextView.storyboard */; };
 		AA99A4FD2538189D00373E4F /* TextInputTraits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A4FC2538189D00373E4F /* TextInputTraits.storyboard */; };
 		AA99A500253818C000373E4F /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A4FF253818C000373E4F /* Keyboard.storyboard */; };
+		AA99A52E2538543200373E4F /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A52D2538543200373E4F /* Button.storyboard */; };
+		AA99A5322538724F00373E4F /* Switch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A5312538724F00373E4F /* Switch.storyboard */; };
+		AA99A5362538829700373E4F /* Slider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A5352538829700373E4F /* Slider.storyboard */; };
+		AA99A53A253898C200373E4F /* PageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A539253898C200373E4F /* PageControl.storyboard */; };
+		AA9CBCBA253EC7E400C82997 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CBCB9253EC7E400C82997 /* TouchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA4A1E8E253BD7D000DEB94B /* ProgressView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProgressView.storyboard; sourceTree = "<group>"; };
+		AA4A1E91253BF87A00DEB94B /* ActivityIndicatorView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityIndicatorView.storyboard; sourceTree = "<group>"; };
+		AA4A1E94253C0CD000DEB94B /* ImageView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageView.storyboard; sourceTree = "<group>"; };
+		AA4A1E98253C0D1500DEB94B /* StackView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StackView.storyboard; sourceTree = "<group>"; };
+		AA6D2F0E253A980100F17211 /* DatePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
+		AA6D2F11253A982300F17211 /* Stepper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stepper.storyboard; sourceTree = "<group>"; };
+		AA6D2F15253AA0CC00F17211 /* PickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickerView.storyboard; sourceTree = "<group>"; };
+		AA91DC9E25398F1E00C63788 /* SegmentedControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SegmentedControl.storyboard; sourceTree = "<group>"; };
 		AA99A4452537FF7100373E4F /* ViewCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA99A4482537FF7100373E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA99A44A2537FF7100373E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +161,11 @@
 		AA99A4F92538187A00373E4F /* TextView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextView.storyboard; sourceTree = "<group>"; };
 		AA99A4FC2538189D00373E4F /* TextInputTraits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextInputTraits.storyboard; sourceTree = "<group>"; };
 		AA99A4FF253818C000373E4F /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		AA99A52D2538543200373E4F /* Button.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
+		AA99A5312538724F00373E4F /* Switch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switch.storyboard; sourceTree = "<group>"; };
+		AA99A5352538829700373E4F /* Slider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
+		AA99A539253898C200373E4F /* PageControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageControl.storyboard; sourceTree = "<group>"; };
+		AA9CBCB9253EC7E400C82997 /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +213,7 @@
 		AA99A462253805DC00373E4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA9CBCB8253EC7D400C82997 /* Support */,
 				AA99A46A253805DC00373E4F /* View.storyboard */,
 				AA99A463253805DC00373E4F /* ContentModeViewController.swift */,
 				AA99A464253805DC00373E4F /* CreatingViewObjectViewController.swift */,
@@ -203,6 +230,7 @@
 			children = (
 				AA99A46D253805DC00373E4F /* ContentViews */,
 				AA99A478253805DC00373E4F /* Controls */,
+				AA99A486253805DC00373E4F /* Controls.storyboard */,
 				AA99A48E253805DC00373E4F /* ContainerViews */,
 				AA99A496253805DC00373E4F /* TextViews */,
 			);
@@ -212,11 +240,11 @@
 		AA99A46D253805DC00373E4F /* ContentViews */ = {
 			isa = PBXGroup;
 			children = (
-				AA99A475253805DC00373E4F /* ContentViews.storyboard */,
 				AA99A46E253805DC00373E4F /* ImageView */,
 				AA99A470253805DC00373E4F /* PickerView */,
 				AA99A473253805DC00373E4F /* ActivityIndicatorView */,
 				AA99A476253805DC00373E4F /* ProgressView */,
+				AA99A475253805DC00373E4F /* ContentViews.storyboard */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -224,6 +252,7 @@
 		AA99A46E253805DC00373E4F /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
+				AA4A1E94253C0CD000DEB94B /* ImageView.storyboard */,
 				AA99A46F253805DC00373E4F /* ImageAnimationViewController.swift */,
 			);
 			path = ImageView;
@@ -232,6 +261,7 @@
 		AA99A470253805DC00373E4F /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				AA6D2F15253AA0CC00F17211 /* PickerView.storyboard */,
 				AA99A471253805DC00373E4F /* ImagePickerViewController.swift */,
 				AA99A472253805DC00373E4F /* TextPickerViewController.swift */,
 			);
@@ -241,6 +271,7 @@
 		AA99A473253805DC00373E4F /* ActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				AA4A1E91253BF87A00DEB94B /* ActivityIndicatorView.storyboard */,
 				AA99A474253805DC00373E4F /* ActivityIndicatorViewViewController.swift */,
 			);
 			path = ActivityIndicatorView;
@@ -249,6 +280,7 @@
 		AA99A476253805DC00373E4F /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				AA4A1E8E253BD7D000DEB94B /* ProgressView.storyboard */,
 				AA99A477253805DC00373E4F /* ProgressViewViewController.swift */,
 			);
 			path = ProgressView;
@@ -257,13 +289,12 @@
 		AA99A478253805DC00373E4F /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				AA99A486253805DC00373E4F /* Controls.storyboard */,
-				AA99A479253805DC00373E4F /* DatePicker */,
-				AA99A47C253805DC00373E4F /* Slider */,
-				AA99A480253805DC00373E4F /* Stepper */,
 				AA99A482253805DC00373E4F /* Button */,
-				AA99A487253805DC00373E4F /* SegmentedControl */,
 				AA99A48A253805DC00373E4F /* Switch */,
+				AA99A47C253805DC00373E4F /* Slider */,
+				AA99A479253805DC00373E4F /* DatePicker */,
+				AA99A480253805DC00373E4F /* Stepper */,
+				AA99A487253805DC00373E4F /* SegmentedControl */,
 				AA99A48C253805DC00373E4F /* PageControl */,
 			);
 			path = Controls;
@@ -272,6 +303,7 @@
 		AA99A479253805DC00373E4F /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				AA6D2F0E253A980100F17211 /* DatePicker.storyboard */,
 				AA99A47A253805DC00373E4F /* CountDownTimerViewController.swift */,
 				AA99A47B253805DC00373E4F /* DatePickerModeViewController.swift */,
 			);
@@ -281,6 +313,7 @@
 		AA99A47C253805DC00373E4F /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				AA99A5352538829700373E4F /* Slider.storyboard */,
 				AA99A47D253805DC00373E4F /* NonContinuousSliderViewController.swift */,
 				AA99A47E253805DC00373E4F /* SimpleSliderViewController.swift */,
 				AA99A47F253805DC00373E4F /* CustomSliderViewController.swift */,
@@ -291,6 +324,7 @@
 		AA99A480253805DC00373E4F /* Stepper */ = {
 			isa = PBXGroup;
 			children = (
+				AA6D2F11253A982300F17211 /* Stepper.storyboard */,
 				AA99A481253805DC00373E4F /* StepperViewController.swift */,
 			);
 			path = Stepper;
@@ -299,6 +333,7 @@
 		AA99A482253805DC00373E4F /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				AA99A52D2538543200373E4F /* Button.storyboard */,
 				AA99A483253805DC00373E4F /* ButtonStateViewController.swift */,
 				AA99A484253805DC00373E4F /* TextButtonViewController.swift */,
 				AA99A485253805DC00373E4F /* ImageButtonViewController.swift */,
@@ -309,6 +344,7 @@
 		AA99A487253805DC00373E4F /* SegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				AA91DC9E25398F1E00C63788 /* SegmentedControl.storyboard */,
 				AA99A488253805DC00373E4F /* CustomizingSegmentedControlViewController.swift */,
 				AA99A489253805DC00373E4F /* SegmentedControlViewController.swift */,
 			);
@@ -318,6 +354,7 @@
 		AA99A48A253805DC00373E4F /* Switch */ = {
 			isa = PBXGroup;
 			children = (
+				AA99A5312538724F00373E4F /* Switch.storyboard */,
 				AA99A48B253805DC00373E4F /* SwitchViewController.swift */,
 			);
 			path = Switch;
@@ -326,6 +363,7 @@
 		AA99A48C253805DC00373E4F /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
+				AA99A539253898C200373E4F /* PageControl.storyboard */,
 				AA99A48D253805DC00373E4F /* PageControlViewController.swift */,
 			);
 			path = PageControl;
@@ -334,8 +372,8 @@
 		AA99A48E253805DC00373E4F /* ContainerViews */ = {
 			isa = PBXGroup;
 			children = (
-				AA99A495253805DC00373E4F /* ContainerViews.storyboard */,
 				AA99A48F253805DC00373E4F /* StackView */,
+				AA99A495253805DC00373E4F /* ContainerViews.storyboard */,
 			);
 			path = ContainerViews;
 			sourceTree = "<group>";
@@ -343,6 +381,7 @@
 		AA99A48F253805DC00373E4F /* StackView */ = {
 			isa = PBXGroup;
 			children = (
+				AA4A1E98253C0D1500DEB94B /* StackView.storyboard */,
 				AA99A490253805DC00373E4F /* StackViewArrangedSubviewsViewController.swift */,
 				AA99A491253805DC00373E4F /* StackViewSpacingViewController.swift */,
 				AA99A492253805DC00373E4F /* StackViewAxisViewController.swift */,
@@ -441,6 +480,14 @@
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
+		AA9CBCB8253EC7D400C82997 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CBCB9253EC7E400C82997 /* TouchView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,18 +545,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA6D2F12253A982300F17211 /* Stepper.storyboard in Resources */,
+				AA6D2F16253AA0CC00F17211 /* PickerView.storyboard in Resources */,
 				AA99A4CB253805DC00373E4F /* Controls.storyboard in Resources */,
 				AA99A4C0253805DC00373E4F /* ContentViews.storyboard in Resources */,
+				AA99A5322538724F00373E4F /* Switch.storyboard in Resources */,
+				AA99A52E2538543200373E4F /* Button.storyboard in Resources */,
 				AA99A4FA2538187A00373E4F /* TextView.storyboard in Resources */,
+				AA4A1E92253BF87A00DEB94B /* ActivityIndicatorView.storyboard in Resources */,
+				AA99A53A253898C200373E4F /* PageControl.storyboard in Resources */,
+				AA4A1E95253C0CD000DEB94B /* ImageView.storyboard in Resources */,
+				AA4A1E8F253BD7D000DEB94B /* ProgressView.storyboard in Resources */,
 				AA99A4552537FF7100373E4F /* LaunchScreen.storyboard in Resources */,
 				AA99A4BB253805DC00373E4F /* View.storyboard in Resources */,
 				AA99A4522537FF7100373E4F /* Assets.xcassets in Resources */,
 				AA99A4D5253805DC00373E4F /* ContainerViews.storyboard in Resources */,
 				AA99A4F32538181C00373E4F /* Label.storyboard in Resources */,
 				AA99A4E5253805DC00373E4F /* TextViews.storyboard in Resources */,
+				AA99A5362538829700373E4F /* Slider.storyboard in Resources */,
+				AA91DC9F25398F1E00C63788 /* SegmentedControl.storyboard in Resources */,
 				AA99A4FD2538189D00373E4F /* TextInputTraits.storyboard in Resources */,
 				AA99A4F72538185A00373E4F /* TextField.storyboard in Resources */,
 				AA99A500253818C000373E4F /* Keyboard.storyboard in Resources */,
+				AA4A1E99253C0D1500DEB94B /* StackView.storyboard in Resources */,
+				AA6D2F0F253A980100F17211 /* DatePicker.storyboard in Resources */,
 				AA99A4502537FF7100373E4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9CBCBA253EC7E400C82997 /* TouchView.swift in Sources */,
 				AA99A4E7253805DC00373E4F /* ReturnKeyViewController.swift in Sources */,
 				AA99A4E8253805DC00373E4F /* FirstResponderViewController.swift in Sources */,
 				AA99A4E4253805DC00373E4F /* TextDelegateViewController.swift in Sources */,

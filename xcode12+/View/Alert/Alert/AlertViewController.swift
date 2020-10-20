@@ -23,28 +23,56 @@
 
 import UIKit
 
-class ImageAnimationViewController: UIViewController {
+class AlertViewController: UIViewController {
     
-    let images = [
-        UIImage(systemName: "speaker")!,
-        UIImage(systemName: "speaker.1")!,
-        UIImage(systemName: "speaker.2")!,
-        UIImage(systemName: "speaker.3")!
-    ]
-    
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBAction func startAnimation(_ sender: Any) {
-        
-    }
-    
-    @IBAction func stopAnimation(_ sender: Any) {
+    @IBAction func show(_ sender: Any) {
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -23,22 +23,12 @@
 
 import UIKit
 
-class ImageAnimationViewController: UIViewController {
+class AddTextFieldViewController: UIViewController {
     
-    let images = [
-        UIImage(systemName: "speaker")!,
-        UIImage(systemName: "speaker.1")!,
-        UIImage(systemName: "speaker.2")!,
-        UIImage(systemName: "speaker.3")!
-    ]
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
     
-    @IBOutlet weak var imageView: UIImageView!
-    
-    @IBAction func startAnimation(_ sender: Any) {
-        
-    }
-    
-    @IBAction func stopAnimation(_ sender: Any) {
+    @IBAction func show(_ sender: Any) {
         
     }
     
@@ -48,3 +38,29 @@ class ImageAnimationViewController: UIViewController {
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
