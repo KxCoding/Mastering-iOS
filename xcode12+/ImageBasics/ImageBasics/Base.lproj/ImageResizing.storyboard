@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gRu-Rt-eso">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Resizing-->
+        <scene sceneID="oa7-eE-qit">
+            <objects>
+                <viewController id="gRu-Rt-eso" customClass="ImageResizingViewController" customModule="ImageBasics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l9R-N5-Gbi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="Pgi-rP-EoM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ozb-I2-zPc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pgi-rP-EoM" firstAttribute="leading" secondItem="Ozb-I2-zPc" secondAttribute="leading" id="7xu-KO-byf"/>
+                            <constraint firstAttribute="bottom" secondItem="Pgi-rP-EoM" secondAttribute="bottom" id="9kP-7b-b6i"/>
+                            <constraint firstItem="Pgi-rP-EoM" firstAttribute="trailing" secondItem="Ozb-I2-zPc" secondAttribute="trailing" id="TiL-hg-dZ1"/>
+                            <constraint firstItem="Pgi-rP-EoM" firstAttribute="top" secondItem="l9R-N5-Gbi" secondAttribute="top" id="bhd-LS-fXM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Resizing" id="nCM-b3-aXs"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Pgi-rP-EoM" id="gNa-Sh-xqx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5S-Xz-ioS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" width="1454" height="2016.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

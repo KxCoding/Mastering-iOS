@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AZT-qb-j0a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Drawing-->
+        <scene sceneID="4sw-x1-PE3">
+            <objects>
+                <viewController id="AZT-qb-j0a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vhe-U3-y5h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-kF-mjl" customClass="CustomDrawingView" customModule="ImageBasics" customModuleProvider="target">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="198-EP-30C"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysI-kF-mjl" firstAttribute="top" secondItem="198-EP-30C" secondAttribute="top" constant="20" id="1f1-TC-Nvf"/>
+                            <constraint firstItem="ysI-kF-mjl" firstAttribute="leading" secondItem="198-EP-30C" secondAttribute="leading" constant="20" id="HzZ-kZ-Qw1"/>
+                            <constraint firstItem="198-EP-30C" firstAttribute="trailing" secondItem="ysI-kF-mjl" secondAttribute="trailing" constant="20" id="Ii5-I6-AKC"/>
+                            <constraint firstItem="198-EP-30C" firstAttribute="bottom" secondItem="ysI-kF-mjl" secondAttribute="bottom" constant="20" id="iGP-Lr-Hed"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Drawing" id="fCP-LP-sMb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UP9-ur-5jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159" y="454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
