@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ED-YM-EQ2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Drawing-->
+        <scene sceneID="Mz8-hW-3BA">
+            <objects>
+                <viewController id="7ED-YM-EQ2" customClass="CustomDrawingViewController" customModule="Color" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRy-j8-TTw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wk-2e-qtF" customClass="CustomView" customModule="Color" customModuleProvider="target">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eCZ-k7-Lcz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eCZ-k7-Lcz" firstAttribute="trailing" secondItem="5Wk-2e-qtF" secondAttribute="trailing" constant="20" id="Ptc-sv-7TC"/>
+                            <constraint firstItem="5Wk-2e-qtF" firstAttribute="top" secondItem="eCZ-k7-Lcz" secondAttribute="top" constant="20" id="dWf-5B-3jk"/>
+                            <constraint firstItem="5Wk-2e-qtF" firstAttribute="leading" secondItem="eCZ-k7-Lcz" secondAttribute="leading" constant="20" id="gt9-p8-ARW"/>
+                            <constraint firstItem="eCZ-k7-Lcz" firstAttribute="bottom" secondItem="5Wk-2e-qtF" secondAttribute="bottom" constant="20" id="tfH-Vp-lKC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Drawing" id="Zuh-Ts-fFa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vb9-7b-FvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415.94202898550731" y="237.72321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
