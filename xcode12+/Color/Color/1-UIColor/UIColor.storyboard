@@ -39,6 +39,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LjU-ZB-czs">
                                                 <rect key="frame" x="-2" y="40.5" width="378" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="9sg-Cu-WPx" eventType="valueChanged" id="4Z7-lI-kU1"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -54,6 +57,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G8N-gV-Ns3">
                                                 <rect key="frame" x="-2" y="40.5" width="378" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="9sg-Cu-WPx" eventType="valueChanged" id="xvI-7w-UKZ"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -69,6 +75,9 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AUX-SO-Gsg">
                                                 <rect key="frame" x="-2" y="40.5" width="378" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                                <connections>
+                                                    <action selector="sliderChanged:" destination="9sg-Cu-WPx" eventType="valueChanged" id="vYk-I8-q45"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
