@@ -32,12 +32,7 @@ class ResizableImageViewController: UIViewController {
         super.viewDidLoad()
         
         if let img = btnImage {
-            let capInset = UIEdgeInsets(top: 14, left: 14, bottom: 14, right: 14)
-            let bkgImage = img.resizableImage(withCapInsets: capInset)
             
-            
-            
-            btn.setBackgroundImage(bkgImage, for: .normal)
         }
         
     }
