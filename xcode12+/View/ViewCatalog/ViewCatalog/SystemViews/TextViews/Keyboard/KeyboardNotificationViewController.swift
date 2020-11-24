@@ -21,12 +21,12 @@
 //  THE SOFTWARE.
 //
 
-// UIResponder.keyboardDidHide
-// UIResponder.keyboardDidShow
-// UIResponder.keyboardWillHide
-// UIResponder.keyboardWillShow
-// UIResponder.keyboardWillChangeFrame
-// UIResponder.keyboardDidChangeFrame
+// UIResponder.keyboardDidHideNotification
+// UIResponder.keyboardDidShowNotification
+// UIResponder.keyboardWillHideNotification
+// UIResponder.keyboardWillShowNotification
+// UIResponder.keyboardWillChangeFrameNotification
+// UIResponder.keyboardDidChangeFrameNotification
 
 import UIKit
 

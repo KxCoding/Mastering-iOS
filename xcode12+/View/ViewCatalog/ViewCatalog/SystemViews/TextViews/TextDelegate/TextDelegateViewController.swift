@@ -33,6 +33,8 @@ class TextDelegateViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     
+    let regex = "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

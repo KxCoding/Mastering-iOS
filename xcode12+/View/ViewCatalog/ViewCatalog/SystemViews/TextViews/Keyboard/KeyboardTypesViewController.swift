@@ -27,6 +27,8 @@ class KeyboardTypesViewController: UIViewController {
     
     @IBOutlet weak var inputField: UITextField!
     
+    @IBOutlet weak var btn: UIButton!
+    
     @IBAction func changeKeyboardType(_ sender: Any) {
         inputField.resignFirstResponder()
         
@@ -48,6 +50,10 @@ class KeyboardTypesViewController: UIViewController {
         
         let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         sheet.addAction(cancel)
+        
+        if let pc = sheet.popoverPresentationController {
+            pc.sourceView = btn
+        }
         
         present(sheet, animated: true, completion: nil)
     }

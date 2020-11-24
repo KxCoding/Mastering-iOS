@@ -84,6 +84,8 @@
 		AA99A5362538829700373E4F /* Slider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A5352538829700373E4F /* Slider.storyboard */; };
 		AA99A53A253898C200373E4F /* PageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA99A539253898C200373E4F /* PageControl.storyboard */; };
 		AA9CBCBA253EC7E400C82997 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9CBCB9253EC7E400C82997 /* TouchView.swift */; };
+		AAE21F72256D240C000EB07E /* InputView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE21F71256D240C000EB07E /* InputView.storyboard */; };
+		AAE21F75256D2434000EB07E /* TextDelegate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE21F74256D2434000EB07E /* TextDelegate.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +168,8 @@
 		AA99A5352538829700373E4F /* Slider.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Slider.storyboard; sourceTree = "<group>"; };
 		AA99A539253898C200373E4F /* PageControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageControl.storyboard; sourceTree = "<group>"; };
 		AA9CBCB9253EC7E400C82997 /* TouchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
+		AAE21F71256D240C000EB07E /* InputView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InputView.storyboard; sourceTree = "<group>"; };
+		AAE21F74256D2434000EB07E /* TextDelegate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TextDelegate.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,9 +232,9 @@
 		AA99A46C253805DC00373E4F /* SystemViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA99A486253805DC00373E4F /* Controls.storyboard */,
 				AA99A46D253805DC00373E4F /* ContentViews */,
 				AA99A478253805DC00373E4F /* Controls */,
-				AA99A486253805DC00373E4F /* Controls.storyboard */,
 				AA99A48E253805DC00373E4F /* ContainerViews */,
 				AA99A496253805DC00373E4F /* TextViews */,
 			);
@@ -421,6 +425,7 @@
 		AA99A49C253805DC00373E4F /* InputView */ = {
 			isa = PBXGroup;
 			children = (
+				AAE21F71256D240C000EB07E /* InputView.storyboard */,
 				AA99A49D253805DC00373E4F /* InputViewViewController.swift */,
 			);
 			path = InputView;
@@ -462,6 +467,7 @@
 		AA99A4AA253805DC00373E4F /* TextDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				AAE21F74256D2434000EB07E /* TextDelegate.storyboard */,
 				AA99A4AB253805DC00373E4F /* TextDelegateViewController.swift */,
 			);
 			path = TextDelegate;
@@ -471,10 +477,10 @@
 			isa = PBXGroup;
 			children = (
 				AA99A4FF253818C000373E4F /* Keyboard.storyboard */,
-				AA99A4B0253805DC00373E4F /* KeyboardAppearanceViewController.swift */,
-				AA99A4B1253805DC00373E4F /* ReturnKeyViewController.swift */,
 				AA99A4B2253805DC00373E4F /* FirstResponderViewController.swift */,
 				AA99A4B3253805DC00373E4F /* KeyboardTypesViewController.swift */,
+				AA99A4B0253805DC00373E4F /* KeyboardAppearanceViewController.swift */,
+				AA99A4B1253805DC00373E4F /* ReturnKeyViewController.swift */,
 				AA99A4B4253805DC00373E4F /* KeyboardNotificationViewController.swift */,
 			);
 			path = Keyboard;
@@ -545,6 +551,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE21F75256D2434000EB07E /* TextDelegate.storyboard in Resources */,
 				AA6D2F12253A982300F17211 /* Stepper.storyboard in Resources */,
 				AA6D2F16253AA0CC00F17211 /* PickerView.storyboard in Resources */,
 				AA99A4CB253805DC00373E4F /* Controls.storyboard in Resources */,
@@ -561,6 +568,7 @@
 				AA99A4522537FF7100373E4F /* Assets.xcassets in Resources */,
 				AA99A4D5253805DC00373E4F /* ContainerViews.storyboard in Resources */,
 				AA99A4F32538181C00373E4F /* Label.storyboard in Resources */,
+				AAE21F72256D240C000EB07E /* InputView.storyboard in Resources */,
 				AA99A4E5253805DC00373E4F /* TextViews.storyboard in Resources */,
 				AA99A5362538829700373E4F /* Slider.storyboard in Resources */,
 				AA91DC9F25398F1E00C63788 /* SegmentedControl.storyboard in Resources */,

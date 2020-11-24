@@ -27,6 +27,8 @@ class TextSelectionViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var selectedRangeLabel: UILabel!
+    
     @IBAction func selectLast(_ sender: Any) {
         let lastWord = "pariatur?"
         
@@ -36,7 +38,7 @@ class TextSelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
     }
 }
 
