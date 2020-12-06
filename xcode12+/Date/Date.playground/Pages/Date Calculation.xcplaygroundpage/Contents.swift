@@ -20,24 +20,37 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
+//: [Previous](@previous)
 
-import UIKit
-import AudioToolbox
+import Foundation
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
+/*:
+ # Date Calculation
+ */
+
+extension Date {
+    init?(year: Int, month: Int, day: Int, hour: Int = 0, minute: Int = 0, second: Int = 0, calendar: Calendar = .current) {
+        var components = DateComponents()
+        components.year = year
+        components.month = month
+        components.day = day
+        components.hour = hour
+        components.minute = minute
+        components.day = day
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        guard let date = calendar.date(from: components) else {
+            return nil
+        }
         
-        
+        self = date
     }
 }
+
+let calendar = Calendar.current
+let worldCup2002 = Date(year: 2002, month: 5, day: 31)!
+
+
+
+
+
+//: [Next](@next)

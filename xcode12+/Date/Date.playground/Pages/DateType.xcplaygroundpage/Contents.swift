@@ -20,24 +20,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-
 import UIKit
-import AudioToolbox
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-}
+/*:
+ # Date Type and Reference Date
+ 
+ ### Reference date: 2001-01-01 00:00:00 / UTC
+ */
+
+
+
+
+
+
+//: [Next](@next)

@@ -20,24 +20,30 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
+//: [Previous](@previous)
 
-import UIKit
-import AudioToolbox
+/*:
+ # Symbols
+ */
+import Foundation
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-}
+let now = Date()
+let weekdaySymbols = ["☀️", "🌕", "🔥", "💧", "🌲", "🥇", "🌏"]
+let am = "🌅"
+let pm = "🌇"
+
+let formatter = DateFormatter()
+formatter.dateStyle = .full
+formatter.timeStyle = .full
+
+formatter.amSymbol = am
+formatter.pmSymbol = pm
+
+print(formatter.string(from: now))
+
+
+
+print(formatter.string(from: now))
+
+
+//: [Next](@next)

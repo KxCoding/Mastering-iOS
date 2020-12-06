@@ -21,23 +21,15 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
-import AudioToolbox
+/*:
+ # DateFormatter
+ */
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-}
+import UIKit
+
+let now = Date()
+print(now)
+
+
+
+//: [Next](@next)

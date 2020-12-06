@@ -20,24 +20,25 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
+//: [Previous](@previous)
 
-import UIKit
-import AudioToolbox
+/*:
+ # DateIntervalFormatter
+ */
+import Foundation
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-}
+let startDate = Date()
+let endDate = startDate.addingTimeInterval(3600 * 24 * 30)
+
+let formatter = DateFormatter()
+formatter.locale = Locale(identifier: "ko_KR")
+formatter.dateStyle = .long
+formatter.timeStyle = .short
+
+print("\(formatter.string(from: startDate)) - \(formatter.string(from: endDate))")
+
+
+
+
+
+//: [Next](@next)

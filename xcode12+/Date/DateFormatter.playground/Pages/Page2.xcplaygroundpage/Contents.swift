@@ -20,24 +20,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
+//: [Previous](@previous)
+
+/*:
+ # Custom Format
+ 
+ [NSDateFormatter.com]:
+ https://nsdateformatter.com/ ""
+ [NSDateFormatter.com]
+ */
 
 import UIKit
-import AudioToolbox
 
-class CountDownTimerViewController: UIViewController {
-    
-    @IBOutlet weak var timeLabel: UILabel!
-    
-    
-    @IBOutlet weak var picker: UIDatePicker!
-    
-    @IBAction func start(_ sender: Any) {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-}
+let now = Date()
+let formatter = DateFormatter()
+
+
+
+
+//: [Next](@next)
