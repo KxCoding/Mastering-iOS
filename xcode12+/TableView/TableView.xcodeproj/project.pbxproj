@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0401B725EBA22300535A6A /* TableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0401B625EBA22300535A6A /* TableViewController.storyboard */; };
 		AA0880E420EEA136004BCAEA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0880E320EEA136004BCAEA /* Products.swift */; };
 		AA0880E620EEA301004BCAEA /* SingleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0880E520EEA301004BCAEA /* SingleSelectionViewController.swift */; };
 		AA0880E820EEDEE5004BCAEA /* MultipleSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0880E720EEDEE5004BCAEA /* MultipleSelectionViewController.swift */; };
@@ -26,7 +27,7 @@
 		AA84F76520E22A96004DF711 /* PhotosSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84F76420E22A96004DF711 /* PhotosSetting.swift */; };
 		AA871A4520E331EA004E2E8B /* SeparatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA871A4420E331EA004E2E8B /* SeparatorViewController.swift */; };
 		AA871A4920E372B8004E2E8B /* AccessoryViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA871A4820E372B8004E2E8B /* AccessoryViewViewController.swift */; };
-		AAA1E1D125E3A8AD006BC597 /* DelegatePattern.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E1D025E3A8AD006BC597 /* DelegatePattern.storyboard */; };
+		AAA1E1D125E3A8AD006BC597 /* TableViewBasics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E1D025E3A8AD006BC597 /* TableViewBasics.storyboard */; };
 		AAA1E1D625E3A98F006BC597 /* MultiSection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E1D525E3A98F006BC597 /* MultiSection.storyboard */; };
 		AAA1E1DB25E3AA12006BC597 /* Separator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E1DA25E3AA12006BC597 /* Separator.storyboard */; };
 		AAA1E1E025E3AA89006BC597 /* TableViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E1DF25E3AA89006BC597 /* TableViewCell.storyboard */; };
@@ -45,7 +46,7 @@
 		AAA1E22125E3B078006BC597 /* Prefetching.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E22025E3B078006BC597 /* Prefetching.storyboard */; };
 		AAA1E22625E3B0BD006BC597 /* StaticCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA1E22525E3B0BD006BC597 /* StaticCells.storyboard */; };
 		AAA1E24B25E3F832006BC597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1E24A25E3F832006BC597 /* SceneDelegate.swift */; };
-		AAA71FE420DF46CF00C5E2AB /* DelegatePetternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA71FE320DF46CF00C5E2AB /* DelegatePetternViewController.swift */; };
+		AAA71FE420DF46CF00C5E2AB /* TableViewBasicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA71FE320DF46CF00C5E2AB /* TableViewBasicsViewController.swift */; };
 		AACF69FC20DA448300DE209C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF69FB20DA448300DE209C /* AppDelegate.swift */; };
 		AACF6A0120DA448300DE209C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACF69FF20DA448300DE209C /* Main.storyboard */; };
 		AACF6A0320DA448400DE209C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACF6A0220DA448400DE209C /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0401B625EBA22300535A6A /* TableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewController.storyboard; sourceTree = "<group>"; };
 		AA0880E320EEA136004BCAEA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		AA0880E520EEA301004BCAEA /* SingleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionViewController.swift; sourceTree = "<group>"; };
 		AA0880E720EEDEE5004BCAEA /* MultipleSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +77,7 @@
 		AA84F76420E22A96004DF711 /* PhotosSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosSetting.swift; sourceTree = "<group>"; };
 		AA871A4420E331EA004E2E8B /* SeparatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorViewController.swift; sourceTree = "<group>"; };
 		AA871A4820E372B8004E2E8B /* AccessoryViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViewViewController.swift; sourceTree = "<group>"; };
-		AAA1E1D025E3A8AD006BC597 /* DelegatePattern.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DelegatePattern.storyboard; sourceTree = "<group>"; };
+		AAA1E1D025E3A8AD006BC597 /* TableViewBasics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewBasics.storyboard; sourceTree = "<group>"; };
 		AAA1E1D525E3A98F006BC597 /* MultiSection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiSection.storyboard; sourceTree = "<group>"; };
 		AAA1E1DA25E3AA12006BC597 /* Separator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Separator.storyboard; sourceTree = "<group>"; };
 		AAA1E1DF25E3AA89006BC597 /* TableViewCell.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewCell.storyboard; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		AAA1E22025E3B078006BC597 /* Prefetching.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prefetching.storyboard; sourceTree = "<group>"; };
 		AAA1E22525E3B0BD006BC597 /* StaticCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StaticCells.storyboard; sourceTree = "<group>"; };
 		AAA1E24A25E3F832006BC597 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AAA71FE320DF46CF00C5E2AB /* DelegatePetternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePetternViewController.swift; sourceTree = "<group>"; };
+		AAA71FE320DF46CF00C5E2AB /* TableViewBasicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewBasicsViewController.swift; sourceTree = "<group>"; };
 		AACF69F820DA448300DE209C /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACF69FB20DA448300DE209C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AACF6A0020DA448300DE209C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA0401B525EBA20000535A6A /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA0401B625EBA22300535A6A /* TableViewController.storyboard */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
 		AA84F76320E22A78004DF711 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +142,8 @@
 		AAA1E1CD25E3A872006BC597 /* DelegatePattern */ = {
 			isa = PBXGroup;
 			children = (
-				AAA1E1D025E3A8AD006BC597 /* DelegatePattern.storyboard */,
-				AAA71FE320DF46CF00C5E2AB /* DelegatePetternViewController.swift */,
+				AAA1E1D025E3A8AD006BC597 /* TableViewBasics.storyboard */,
+				AAA71FE320DF46CF00C5E2AB /* TableViewBasicsViewController.swift */,
 			);
 			path = DelegatePattern;
 			sourceTree = "<group>";
@@ -320,6 +330,7 @@
 				AAA1E21425E3AFD6006BC597 /* SwipeAction */,
 				AAA1E21925E3B009006BC597 /* Reordering */,
 				AAA1E21E25E3B048006BC597 /* Prefetching */,
+				AA0401B525EBA20000535A6A /* TableViewController */,
 				AAA1E22325E3B0A0006BC597 /* StaticCells */,
 				AACF69FB20DA448300DE209C /* AppDelegate.swift */,
 				AAA1E24A25E3F832006BC597 /* SceneDelegate.swift */,
@@ -401,12 +412,13 @@
 				AACF6A0320DA448400DE209C /* Assets.xcassets in Resources */,
 				AAA1E21225E3AFB7006BC597 /* RowAction.storyboard in Resources */,
 				AAA1E1F525E3ACAD006BC597 /* HeaderAndFooter.storyboard in Resources */,
-				AAA1E1D125E3A8AD006BC597 /* DelegatePattern.storyboard in Resources */,
+				AAA1E1D125E3A8AD006BC597 /* TableViewBasics.storyboard in Resources */,
 				AAA1E1FF25E3AD49006BC597 /* HeaderFooterView.storyboard in Resources */,
 				AAA1E1E625E3AB9F006BC597 /* AccessoryView.storyboard in Resources */,
 				AAA1E1F025E3AC44006BC597 /* CustomCell.storyboard in Resources */,
 				AACF6A0120DA448300DE209C /* Main.storyboard in Resources */,
 				AAA1E1EB25E3AC0F006BC597 /* SelfSizing.storyboard in Resources */,
+				AA0401B725EBA22300535A6A /* TableViewController.storyboard in Resources */,
 				AAA1E21725E3AFFD006BC597 /* SwipeAction.storyboard in Resources */,
 				AAA1E1FA25E3ACF3006BC597 /* SectionIndex.storyboard in Resources */,
 				AAA1E20725E3ADD0006BC597 /* MultipleSelection.storyboard in Resources */,
@@ -426,7 +438,7 @@
 				AA5016F820EC3D6E00F82883 /* SelfSizingCellViewController.swift in Sources */,
 				AA7CDBA920ED8A94004EFB9C /* Region.swift in Sources */,
 				AA0880F020EF15F8004BCAEA /* SwipeActionViewController.swift in Sources */,
-				AAA71FE420DF46CF00C5E2AB /* DelegatePetternViewController.swift in Sources */,
+				AAA71FE420DF46CF00C5E2AB /* TableViewBasicsViewController.swift in Sources */,
 				AA5016F420EC26AE00F82883 /* WorldTime.swift in Sources */,
 				AA62FF7120EE5A9200C27EF0 /* SectionIndexViewController.swift in Sources */,
 				AAE2BD3220EFF3FC00FD64F1 /* HeaderFooterViewViewController.swift in Sources */,
@@ -591,7 +603,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,7 +623,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TableView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

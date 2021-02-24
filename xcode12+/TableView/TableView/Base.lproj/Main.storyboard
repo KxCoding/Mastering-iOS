@@ -25,7 +25,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343.66666666666669" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Delegate Pattern" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Tp4-BZ-gQ5">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="TableView Basics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Tp4-BZ-gQ5">
                                                     <rect key="frame" x="20" y="0.0" width="315.66666666666669" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -374,6 +374,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="30Q-je-rWG" kind="show" id="cgw-v7-sgG"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Cyt-Ou-ETa" style="IBUITableViewCellStyleDefault" id="84r-9H-K9C">
                                         <rect key="frame" x="0.0" y="810" width="375" height="44"/>
@@ -422,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="-3318" y="1821"/>
         </scene>
-        <!--DelegatePattern-->
+        <!--TableViewBasics-->
         <scene sceneID="U0b-zh-o0e">
             <objects>
-                <viewControllerPlaceholder storyboardName="DelegatePattern" id="v0r-Ob-WKU" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TableViewBasics" id="v0r-Ob-WKU" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="H9M-sH-r0Q"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qw8-ch-qqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -592,6 +595,16 @@
             </objects>
             <point key="canvasLocation" x="-1032" y="2168"/>
         </scene>
+        <!--TableViewController-->
+        <scene sceneID="Tc2-M6-ryv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TableViewController" id="30Q-je-rWG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UrD-ip-xfB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kF-nP-xRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1589" y="2296"/>
+        </scene>
         <!--StaticCells-->
         <scene sceneID="YLe-jC-euq">
             <objects>
@@ -600,7 +613,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdP-Dj-ELw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1032" y="2228"/>
+            <point key="canvasLocation" x="-1026" y="2256"/>
         </scene>
     </scenes>
 </document>

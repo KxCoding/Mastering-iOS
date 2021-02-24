@@ -23,7 +23,7 @@
 
 import UIKit
 
-class DelegatePetternViewController: UIViewController {
+class TableViewBasicsViewController: UIViewController {
     
     let list = ["iPhone", "iPad", "Apple Watch", "iMac Pro", "iMac 5K", "Macbook Pro", "Apple TV"]
     

@@ -12,13 +12,14 @@
         <!--Delegate Pattern-->
         <scene sceneID="YBh-e7-6uq">
             <objects>
-                <viewController title="Delegate Pattern" id="IZi-3O-AaU" customClass="DelegatePetternViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Delegate Pattern" id="IZi-3O-AaU" customClass="TableViewBasicsViewController" customModule="TableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C2d-lz-AcH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8qB-Ou-RzT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="TableView Basics" id="hMH-0q-kBk"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XgL-MG-OHi" userLabel="First Responder" sceneMemberID="firstResponder"/>

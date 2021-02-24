@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eL9-FO-dDF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="295" id="OsO-iy-mN4">
@@ -31,7 +31,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-wT-5zy">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="GIn-wT-5zy" secondAttribute="height" multiplier="16:9" id="lNf-9V-EgG"/>
+                                                        <constraint firstAttribute="width" secondItem="GIn-wT-5zy" secondAttribute="height" multiplier="16:9" priority="999" id="lNf-9V-EgG"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-mV-p1g">
@@ -65,7 +65,7 @@
                         <constraints>
                             <constraint firstItem="eL9-FO-dDF" firstAttribute="trailing" secondItem="tpg-3W-JY5" secondAttribute="trailing" id="DFT-4j-dvO"/>
                             <constraint firstItem="eL9-FO-dDF" firstAttribute="leading" secondItem="tpg-3W-JY5" secondAttribute="leading" id="O7m-Jj-dAo"/>
-                            <constraint firstItem="eL9-FO-dDF" firstAttribute="bottom" secondItem="tpg-3W-JY5" secondAttribute="bottom" id="en6-Bn-7pX"/>
+                            <constraint firstItem="eL9-FO-dDF" firstAttribute="bottom" secondItem="nSI-DI-OKn" secondAttribute="bottom" id="en6-Bn-7pX"/>
                             <constraint firstItem="eL9-FO-dDF" firstAttribute="top" secondItem="nSI-DI-OKn" secondAttribute="top" id="w5S-hv-2Xs"/>
                         </constraints>
                     </view>

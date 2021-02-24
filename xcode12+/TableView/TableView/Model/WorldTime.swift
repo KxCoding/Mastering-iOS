@@ -27,14 +27,15 @@ struct WorldTime {
     let date: String
     let hoursFromGMT: Int
     let location: String
+    let ampm: String
     let time: String
     
     static func generateData() -> [WorldTime] {
-        let list = [("Asia/Seoul", "Seoul"), ("America/New_York", "New York"), ("Europe/Paris", "Paris"), ("Europe/London", "London"), ("Europe/Zurich", "Zurich")]
+        let list = [("Asia/Seoul", "서울"), ("America/New_York", "뉴욕"), ("Europe/Paris", "파리"), ("Europe/London", "런던"), ("Europe/Zurich", "취리히")]
         
         let now = Date()
         let formatter = DateFormatter()
-        //formatter.locale = Locale(identifier: "Ko_kr")
+        formatter.locale = Locale(identifier: "Ko_kr")
         formatter.doesRelativeDateFormatting = true
         
         var result = [WorldTime]()
@@ -48,12 +49,14 @@ struct WorldTime {
             formatter.timeStyle = .none
             let date = formatter.string(from: dt)
             
-            formatter.dateStyle = .none
-            formatter.timeStyle = .short
+            formatter.dateFormat = "a"
+            let ampm = formatter.string(from: dt)
+            
+            formatter.dateFormat = "h:mm"
             let time = formatter.string(from: dt)
             let hoursFromGMT = (tz.secondsFromGMT() / 3600) - 9
             
-            let data = WorldTime(date: date, hoursFromGMT: hoursFromGMT, location: location, time: time)
+            let data = WorldTime(date: date, hoursFromGMT: hoursFromGMT, location: location, ampm: ampm, time: time)
             result.append(data)
         }
         
