@@ -32,7 +32,7 @@ class SelectionViewController: UIViewController {
     }()
     
     
-    lazy var checkImage: UIImage? = UIImage.init(named: "checked")
+    lazy var checkImage: UIImage? = UIImage(systemName: "checkmark.circle")
     
     
     @IBOutlet weak var listCollectionView: UICollectionView!

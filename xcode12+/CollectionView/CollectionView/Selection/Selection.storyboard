@@ -37,8 +37,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="checked" translatesAutoresizingMaskIntoConstraints="NO" id="QGe-EQ-JKU">
-                                                    <rect key="frame" x="9" y="9" width="32" height="32"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QGe-EQ-JKU">
+                                                    <rect key="frame" x="15" y="15.5" width="20" height="19"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -73,7 +73,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checked" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
