@@ -109,7 +109,7 @@ extension PrefetchingViewController {
                 strongSelf.list[index].image = image
                 let reloadTargetIndexPath = IndexPath(row: index, section: 0)
                 DispatchQueue.main.async {
-                    if strongSelf.listCollectionView.indexPathsForVisibleItems.contains(reloadTargetIndexPath) == .some(true) {
+                    if strongSelf.listCollectionView.indexPathsForVisibleItems.contains(reloadTargetIndexPath) {
                         strongSelf.listCollectionView.reloadItems(at: [reloadTargetIndexPath])
                     }
                 }
@@ -129,7 +129,7 @@ extension PrefetchingViewController {
     
     func cancelDownload(at index: Int) {
         let targetUrl = list[index].url
-        guard let taskIndex = downloadTasks.index(where: { $0.originalRequest?.url == targetUrl }) else {
+        guard let taskIndex = downloadTasks.firstIndex(where: { $0.originalRequest?.url == targetUrl }) else {
             return
         }
         let task = downloadTasks[taskIndex]
