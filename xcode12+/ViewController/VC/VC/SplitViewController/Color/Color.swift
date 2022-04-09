@@ -87,7 +87,7 @@ extension MaterialColor {
 }
 
 public extension UIColor {
-    public struct MaterialRed: MaterialColor {
+    struct MaterialRed: MaterialColor {
         static let title = "Material Red"
         
         public static let primary = UIColor(hexString: "#F44336")
@@ -107,7 +107,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#D50000")
     }
     
-    public struct MaterialPink: MaterialColor {
+    struct MaterialPink: MaterialColor {
         static let title = "Material Pink"
         
         public static let primary = UIColor(hexString: "#E91E63")
@@ -127,7 +127,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#C51162")
     }
     
-    public struct MaterialPurple: MaterialColor {
+    struct MaterialPurple: MaterialColor {
         static let title = "Material Purple"
         
         public static let primary = UIColor(hexString: "#9C27B0")
@@ -147,7 +147,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#AA00FF")
     }
     
-    public struct MaterialDeepPurple: MaterialColor {
+    struct MaterialDeepPurple: MaterialColor {
         static let title = "Material Deep Purple"
         
         public static let primary = UIColor(hexString: "#EDE7F6")
@@ -167,7 +167,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#6200EA")
     }
     
-    public struct MaterialIndigo: MaterialColor {
+    struct MaterialIndigo: MaterialColor {
         static let title = "Material Indigo"
         
         public static let primary = UIColor(hexString: "#3F51B5")
@@ -187,7 +187,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#304FFE")
     }
     
-    public struct MaterialBlue: MaterialColor {
+    struct MaterialBlue: MaterialColor {
         static let title = "Material Blue"
         
         public static let primary = UIColor(hexString: "#2196F3")
@@ -207,7 +207,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#2962FF")
     }
     
-    public struct MaterialLightBlue: MaterialColor {
+    struct MaterialLightBlue: MaterialColor {
         static let title = "Material Light Blue"
         
         public static let primary = UIColor(hexString: "#03A9F4")
@@ -227,7 +227,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#0091EA")
     }
     
-    public struct MaterialCyan: MaterialColor {
+    struct MaterialCyan: MaterialColor {
         static let title = "Material Cyan"
         
         public static let primary = UIColor(hexString: "#00BCD4")
@@ -247,7 +247,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#00B8D4")
     }
     
-    public struct MaterialTeal: MaterialColor {
+    struct MaterialTeal: MaterialColor {
         static let title = "Material Teal"
         
         public static let primary = UIColor(hexString: "#009688")
@@ -267,7 +267,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#00BFA5")
     }
     
-    public struct MaterialGreen: MaterialColor {
+    struct MaterialGreen: MaterialColor {
         static let title = "Material Green"
         
         public static let primary = UIColor(hexString: "#4CAF50")
@@ -287,7 +287,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#00C853")
     }
     
-    public struct MaterialLightGreen: MaterialColor {
+    struct MaterialLightGreen: MaterialColor {
         static let title = "Material Light Green"
         
         public static let primary = UIColor(hexString: "#8BC34A")
@@ -307,7 +307,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#64DD17")
     }
     
-    public struct MaterialLime: MaterialColor {
+    struct MaterialLime: MaterialColor {
         static let title = "Material Lime"
         
         public static let primary = UIColor(hexString: "#CDDC39")
@@ -327,7 +327,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#AEEA00")
     }
     
-    public struct MaterialYellow: MaterialColor {
+    struct MaterialYellow: MaterialColor {
         static let title = "Material Yellow"
         
         public static let primary = UIColor(hexString: "#FFEB3B")
@@ -347,7 +347,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#FFD600")
     }
     
-    public struct MaterialAmber: MaterialColor {
+    struct MaterialAmber: MaterialColor {
         static let title = "Material Amber"
         
         public static let primary = UIColor(hexString: "#FFC107")
@@ -367,7 +367,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#FFAB00")
     }
     
-    public struct MaterialOrange: MaterialColor {
+    struct MaterialOrange: MaterialColor {
         static let title = "Material Orange"
         
         public static let primary = UIColor(hexString: "#FF9800")
@@ -387,7 +387,7 @@ public extension UIColor {
         public static let a700    = UIColor(hexString: "#FF6D00")
     }
     
-    public struct MaterialDeepOrange: MaterialColor {
+    struct MaterialDeepOrange: MaterialColor {
         static let title = "Material Deep Orange"
         
         public static let primary = UIColor(hexString: "#FF5722")
@@ -420,7 +420,7 @@ public extension UIColor {
      
      - Returns: An initialized color object. If *hexString* is not a valid hexadecimal color string, returns a color object whose grayscale value is 1.0 and whose alpha value is 1.0.
      */
-    public convenience init(hexString: String) {
+    convenience init(hexString: String) {
         var red: CGFloat    = 1.0
         var green: CGFloat  = 1.0
         var blue: CGFloat   = 1.0
@@ -434,11 +434,11 @@ public extension UIColor {
     }
     
     
-    public var rgbHexString: String {
+    var rgbHexString: String {
         return toHexString(includeAlpha: false)
     }
     
-    public var rgbaHexString: String {
+    var rgbaHexString: String {
         return toHexString(includeAlpha: true)
     }
     
@@ -474,7 +474,7 @@ public extension String {
     }
     
     /// A Boolean value that indicates whether the receiver is hexadecimal color string
-    public var isHexColorString: Bool {
+    var isHexColorString: Bool {
         if !hasPrefix("#") || len < 4 || len > 9 {
             return false
         }
@@ -493,7 +493,7 @@ public extension String {
     
     
     /// The red component of the hexadecimal color string
-    public var redComponent: CGFloat? {
+    var redComponent: CGFloat? {
         guard isHexColorString else { return nil }
         
         switch len {
@@ -508,7 +508,7 @@ public extension String {
     
     
     /// The green component of the hexadecimal color string
-    public var greenComponent: CGFloat? {
+    var greenComponent: CGFloat? {
         guard isHexColorString else { return nil }
         
         switch len {
@@ -523,7 +523,7 @@ public extension String {
     
     
     /// The blue component of the hexadecimal color string
-    public var blueComponent: CGFloat? {
+    var blueComponent: CGFloat? {
         guard isHexColorString else { return nil }
         
         switch len {
@@ -538,7 +538,7 @@ public extension String {
     
     
     /// The alpha component of the hexadecimal color string
-    public var alphaComponent: CGFloat? {
+    var alphaComponent: CGFloat? {
         guard isHexColorString else { return nil }
         
         switch len {
@@ -553,7 +553,7 @@ public extension String {
     
     
     /// The receiver's UIColor representation
-    public var UIColorValue: UIColor? {
+    var UIColorValue: UIColor? {
         return parseHexColorString()
     }
     
@@ -567,7 +567,7 @@ public extension String {
     /// - RRGGBBAA
     ///
     /// - Returns: The UIColor object for the parsed string, or nil if there is an error of if receiver is not a valid hexadecimal color string
-    public func parseHexColorString() -> UIColor? {
+    func parseHexColorString() -> UIColor? {
         if let r = redComponent, let g = greenComponent, let b = blueComponent {
             let a = alphaComponent ?? 255
             
@@ -603,9 +603,9 @@ public extension String {
         #endif
         
         
-        var result: UInt32 = 0
+        var result: UInt64 = 0
         let scanner = Scanner(string: value)
-        if scanner.scanHexInt32(&result) {
+        if scanner.scanHexInt64(&result) {
             return CGFloat(result)
         }
         

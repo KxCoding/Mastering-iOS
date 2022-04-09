@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gpn-HZ-19w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gpn-HZ-19w">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mew-HQ-jcF">
-                                <rect key="frame" x="16" y="696" width="358" height="40"/>
+                                <rect key="frame" x="16" y="730" width="358" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kax-07-3CQ"/>
                                 </constraints>
@@ -84,15 +84,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpS-eg-8dR">
-                                <rect key="frame" x="152.66666666666666" y="647" width="85" height="30"/>
+                                <rect key="frame" x="152.66666666666666" y="681" width="85" height="30"/>
                                 <state key="normal" title="Toggle Style"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8v-t1-p9C">
+                                <rect key="frame" x="141" y="631" width="108" height="30"/>
+                                <state key="normal" title="Toggle Visibility"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ygi-8p-Qvj"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ygi-8p-Qvj" firstAttribute="bottom" secondItem="mew-HQ-jcF" secondAttribute="bottom" constant="20" id="13a-Dy-vl4"/>
+                            <constraint firstItem="WpS-eg-8dR" firstAttribute="top" secondItem="I8v-t1-p9C" secondAttribute="bottom" constant="20" id="46v-2A-Qaf"/>
                             <constraint firstItem="WpS-eg-8dR" firstAttribute="centerX" secondItem="mew-HQ-jcF" secondAttribute="centerX" id="bXA-k4-mqk"/>
+                            <constraint firstItem="I8v-t1-p9C" firstAttribute="centerX" secondItem="eMc-2Q-82X" secondAttribute="centerX" id="cLV-y6-b1W"/>
                             <constraint firstItem="mew-HQ-jcF" firstAttribute="top" secondItem="WpS-eg-8dR" secondAttribute="bottom" constant="19" id="fLB-8t-dJt"/>
                             <constraint firstItem="ygi-8p-Qvj" firstAttribute="trailing" secondItem="mew-HQ-jcF" secondAttribute="trailing" constant="16" id="nW0-Ka-Ovi"/>
                             <constraint firstItem="mew-HQ-jcF" firstAttribute="leading" secondItem="ygi-8p-Qvj" secondAttribute="leading" constant="16" id="wCg-Is-rDD"/>
@@ -114,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNz-Qv-Ipj">
-                                <rect key="frame" x="16" y="696" width="358" height="40"/>
+                                <rect key="frame" x="16" y="730" width="358" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bVg-gg-P1Q"/>
                                 </constraints>

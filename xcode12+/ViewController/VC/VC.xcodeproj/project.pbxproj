@@ -159,9 +159,9 @@
 			children = (
 				AAC3459A211D63E6007D2460 /* Video */,
 				AA1B5E6D2112F2AA002D1AF8 /* InterfaceOrientation.storyboard */,
+				AA1B5E6F2112F2E4002D1AF8 /* InterfaceOrientationViewController.swift */,
 				AA8A1DF4211CB5C500D82EB4 /* OrientationRotationViewController.swift */,
 				AAC34596211D5C06007D2460 /* CustomInterfaceOrientationController.swift */,
-				AA1B5E6F2112F2E4002D1AF8 /* InterfaceOrientationViewController.swift */,
 				AAC34598211D5EE0007D2460 /* ConditionalInterfaceOrientationViewController.swift */,
 				AA1B5E712112FB5A002D1AF8 /* LandscapeModalViewController.swift */,
 			);
@@ -187,16 +187,16 @@
 		AA24B6FD210FC3050052BB79 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				AA18405A21197F7F003102B0 /* HomeIndicator */,
-				AA18405921197F74003102B0 /* StatusBar */,
-				AAC3459F211D967C007D2460 /* SplitViewController */,
-				AA6B877321183E1B0057356F /* TabBarController */,
-				AA9B5B082115980800B49241 /* NavigationController */,
-				AA2F9E6921143D0B00D58745 /* ContainerVC */,
-				AA1B5E6C2112F273002D1AF8 /* InterfaceOrientation */,
-				AA1B5E632112E482002D1AF8 /* LifeCycle */,
-				AA24B716210FC7A90052BB79 /* ViewManagement */,
 				AA24B715210FC79C0052BB79 /* ViewController */,
+				AA24B716210FC7A90052BB79 /* ViewManagement */,
+				AA1B5E632112E482002D1AF8 /* LifeCycle */,
+				AA1B5E6C2112F273002D1AF8 /* InterfaceOrientation */,
+				AA2F9E6921143D0B00D58745 /* ContainerVC */,
+				AA9B5B082115980800B49241 /* NavigationController */,
+				AA6B877321183E1B0057356F /* TabBarController */,
+				AAC3459F211D967C007D2460 /* SplitViewController */,
+				AA18405921197F74003102B0 /* StatusBar */,
+				AA18405A21197F7F003102B0 /* HomeIndicator */,
 				AA24B710210FC4080052BB79 /* Predefined */,
 			);
 			path = VC;
@@ -327,11 +327,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Keun young Kim";
 				TargetAttributes = {
 					AA24B6FA210FC3050052BB79 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -468,6 +469,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -493,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -528,6 +530,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -547,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -572,7 +575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kxcoding.VC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -593,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kxcoding.VC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

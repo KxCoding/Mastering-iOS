@@ -23,7 +23,7 @@
 
 import UIKit
 
-class CustomizingViewController: UIViewController {
+class CustomizingViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
